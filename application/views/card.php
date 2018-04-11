@@ -72,7 +72,7 @@ th, td {
                                                 <thead>
                                                     <tr>
                                                         <td colspan="5">
-                                                            <label class="control-label">ชื่อวัตถุ/รายละเอียดวัตถุชื่อ  </label>
+                                                            <label class="control-label">ชื่อวัตถุ/รายละเอียดวัตถุชื่อ test</label>
                                                             
                                                         </td>
                                                     </tr>
