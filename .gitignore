@@ -23,14 +23,8 @@ uploads/artifact/gallery/*
 uploads/member/*
 !uploads/member/.gitkeep
 
-
-uploads/icon/*
-!uploads/icon/.gitkeep
-
 uploads/member/*
 !uploads/member/.gitkeep
-
-
 
 !*.gitkeep
 
