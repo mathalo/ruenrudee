@@ -7,14 +7,32 @@
 !*/cache/index.html
 !*/cache/.htaccess
 
-uploads/icon/*
-!uploads/icon/.gitkeep
-uploads/member/*
-!uploads/member/.gitkeep
-uploads/artifact/gallery/*
-!uploads/artifact/gallery/.gitkeep
 uploads/*
 !uploads/.gitkeep
+!uploads/artifact
+!uploads/member
+
+uploads/artifact/*
+!uploads/artifact/gallery
+!uploads/artifact/.gitkeep
+
+#uploads/artifact/*
+uploads/artifact/gallery/*
+!uploads/artifact/gallery/.gitkeep
+
+uploads/member/*
+!uploads/member/.gitkeep
+
+
+uploads/icon/*
+!uploads/icon/.gitkeep
+
+uploads/member/*
+!uploads/member/.gitkeep
+
+
+
+!*.gitkeep
 
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
@@ -35,7 +53,8 @@ application/logs/*
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
