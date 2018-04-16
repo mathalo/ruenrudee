@@ -1,0 +1,10 @@
+{
+  "port": 8001,
+  "repositories":
+  [{
+    "url": "https://github.com/mathalo/ruenrudee",
+    "path": "/root/docker/www/ruenrudee.acodify.com/public_html",
+    "deploy": "git pull origin master"
+  }
+  ]
+}
