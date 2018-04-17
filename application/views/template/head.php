@@ -15,7 +15,7 @@
         <![endif]-->
     <!-- GLOBAL STYLES -->
     <!-- GLOBAL STYLES -->
-    <link rel="icon" href="<?php echo base_url(); ?>uploads/icon_/mario.ico" type="image/x-icon" />
+    <link rel="icon" href="<?php echo base_url(); ?>uploads/mario.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css" />
