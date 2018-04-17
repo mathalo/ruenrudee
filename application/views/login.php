@@ -46,9 +46,9 @@
                     <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
                 </div>
                 <?php echo form_open('Login/', 'class="form-signin" id="block-validate"'); ?>
-                    <!-- <p class="text-muted text-center btn-block btn btn-primary btn-rect">
+                    <p class="text-muted text-center ">
                     เข้าสู่ระบบ
-                    </p> -->
+                    </p>
                     <input type="text" name="username" placeholder="Username" class="form-control" />
                     <?php echo form_error('username', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
 
