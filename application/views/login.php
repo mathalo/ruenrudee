@@ -42,9 +42,9 @@
         <div class="tab-content">
             <div id="login" class="tab-pane active">
                 <?php echo form_open('Login/', 'class="form-signin" id="block-validate"'); ?>
-                    <p class="text-muted text-center btn-block btn btn-primary btn-rect">
+                    <!-- <p class="text-muted text-center btn-block btn btn-primary btn-rect">
                     เข้าสู่ระบบ
-                    </p>
+                    </p> -->
                     <input type="text" name="username" placeholder="Username" class="form-control" />
                     <?php echo form_error('username', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
 
