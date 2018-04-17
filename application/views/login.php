@@ -16,7 +16,7 @@
         <![endif]-->
     <!-- GLOBAL STYLES -->
      <!-- PAGE LEVEL STYLES -->
-     <link rel="icon" href="<?php echo base_url(); ?>uploads/icon/mario.ico" type="image/x-icon" />
+     <link rel="icon" href="<?php echo base_url(); ?>uploads/mario.ico" type="image/x-icon" />
      
      <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/login.css" />
@@ -36,7 +36,7 @@
    <!-- PAGE CONTENT --> 
 <div class="container">
     <div class="text-center">
-        <img src="<?php echo base_url(); ?>assets/img/logo.png" id="logoimg" alt=" Logo" />
+        <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
     </div>
     
         <div class="tab-content">
