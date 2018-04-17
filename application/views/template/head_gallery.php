@@ -14,7 +14,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
     <!-- GLOBAL STYLES -->
-    <link rel="icon" href="<?php echo base_url(); ?>uploads/icon/mario.ico" type="image/x-icon" />
+    <link rel="icon" href="<?php echo base_url(); ?>uploads/icon_/mario.ico" type="image/x-icon" />
     <!-- GLOBAL STYLES -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css" />
