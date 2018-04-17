@@ -46,7 +46,7 @@
                     <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
                 </div>
                 <?php echo form_open('Login/', 'class="form-signin" id="block-validate"'); ?>
-                    <p class="text-muted text-center ">
+                    <p class="text-muted text-center btn-block btn btn-primary">
                     เข้าสู่ระบบ
                     </p>
                     <input type="text" name="username" placeholder="Username" class="form-control" />
