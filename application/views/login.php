@@ -35,11 +35,12 @@
 
    <!-- PAGE CONTENT --> 
 <div class="container">
-    <div class="text-center">
+    <!-- <div class="text-center">
         <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
-    </div>
+    </div> -->
     
         <div class="tab-content">
+            <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
             <div id="login" class="tab-pane active">
                 <?php echo form_open('Login/', 'class="form-signin" id="block-validate"'); ?>
                     <!-- <p class="text-muted text-center btn-block btn btn-primary btn-rect">
