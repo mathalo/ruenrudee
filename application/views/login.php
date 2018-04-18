@@ -43,7 +43,7 @@
             
             <div id="login" class="tab-pane active">
                 <center>
-                    <div class="text-center">
+                    <div class="text-center" style="width:100%">
                         <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
                     </div>
                 </center>
