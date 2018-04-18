@@ -41,9 +41,9 @@
     
         <div class="tab-content">
             
-            <div id="login" class="tab-pane active">
+            <div id="login" class="tab-pane active" style="border-style: solid;">
                 <center>
-                    <div style="width:100%">
+                    <div style="border-style: solid;width:100%;">
                         <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
                     </div>
                 </center>
