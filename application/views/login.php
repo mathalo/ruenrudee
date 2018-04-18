@@ -42,9 +42,11 @@
         <div class="tab-content">
             
             <div id="login" class="tab-pane active">
-                <div class="text-center">
-                    <center><img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" /></center>
-                </div>
+                <center>
+                    <div class="text-center">
+                        <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
+                    </div>
+                </center>
                 <?php echo form_open('Login/', 'class="form-signin" id="block-validate"'); ?>
                     <p class="text-muted text-center btn-block btn-primary">
                     เข้าสู่ระบบ
