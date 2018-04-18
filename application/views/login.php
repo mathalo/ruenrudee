@@ -44,7 +44,7 @@
             <div id="login" class="tab-pane active" style="border-style: solid;">
                 <center>
                         <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
-                    
+                        <br>xxxxxxxxxxx
                 </center>
                 <?php echo form_open('Login/', 'class="form-signin" id="block-validate"'); ?>
                     <p class="text-muted text-center btn-block btn-primary">
