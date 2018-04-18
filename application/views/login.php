@@ -41,10 +41,10 @@
     
         <div class="tab-content">
             
-            <div id="login" class="tab-pane active" style="border-style: solid;">
+            <div id="login" class="tab-pane active" >
                 <center>
-                        <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" alt=" Logo" />
-                        <br>xxxxxxxxxxx
+                        <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" width="150" height="200" alt=" Logo" />
+                        <!-- <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" /> -->
                 </center>
                 <?php echo form_open('Login/', 'class="form-signin" id="block-validate"'); ?>
                     <p class="text-muted text-center btn-block btn-primary">
