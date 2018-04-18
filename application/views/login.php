@@ -16,7 +16,7 @@
         <![endif]-->
     <!-- GLOBAL STYLES -->
      <!-- PAGE LEVEL STYLES -->
-     <link rel="icon" href="<?php echo base_url(); ?>assets/img/ps_icon.ico" type="image/x-icon" />
+     <link rel="icon" href="<?php echo base_url(); ?>assets/img/logo_ps.ico" type="image/x-icon" />
      
      <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/login.css" />
