@@ -43,7 +43,7 @@
             
             <div id="login" class="tab-pane active">
                 <div class="text-center">
-                    <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" />
+                    <center><img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" /></center>
                 </div>
                 <?php echo form_open('Login/', 'class="form-signin" id="block-validate"'); ?>
                     <p class="text-muted text-center btn-block btn-primary">
@@ -69,12 +69,12 @@
             </div>
 -->
         </div>
-        <div class="text-center">
+        <!-- <div class="text-center">
             <ul class="list-inline">
                 <li><a class="text-muted" href="#login" data-toggle="tab">Login</a></li>
                 <li><a class="text-muted" href="#forgot" data-toggle="tab">Forgot Password</a></li>
             </ul>
-        </div>
+        </div> -->
 </div>
 
 	  <!--END PAGE CONTENT -->    
