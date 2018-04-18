@@ -71,8 +71,8 @@
         </div>
         <div class="text-center">
             <ul class="list-inline">
-                <!-- <li><a class="text-muted" href="#login" data-toggle="tab">Login</a></li> -->
-                <!-- <li><a class="text-muted" href="#forgot" data-toggle="tab">Forgot Password</a></li> -->
+                <li><a class="text-muted" href="#login" data-toggle="tab">Login</a></li>
+                <li><a class="text-muted" href="#forgot" data-toggle="tab">Forgot Password</a></li>
             </ul>
         </div>
 </div>
