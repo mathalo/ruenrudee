@@ -13,7 +13,7 @@
                 <div class="inner">
                     <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">ค้นข้อมูล</h1>
+                    <h1 class="page-header">สืบค้นข้อมูล</h1>
                 </div>
             </div>
             <div class="row">
