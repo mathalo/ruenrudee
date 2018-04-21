@@ -42,6 +42,7 @@ th, td {
     @media print
     {
         #non-printable { display: none; }
+        #left { display: none; }
         #printable { display: block; }
     }
 </style>
