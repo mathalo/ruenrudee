@@ -5,7 +5,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2> ประเภทโบราณวัตถุ ศิลปวัตถุ</h2>
+                        <h2> หมวดหมู่วัตถุ ศิลปวัตถุ</h2>
 
                     </div>
                 </div>
@@ -14,7 +14,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                        ตารางประเภทโบราณวัตถุ ศิลปวัตถุ
+                        ตารางหมวดหมู่วัตถุ ศิลปวัตถุ
                         </div>
                         
                         <div class="panel-body">

@@ -5,7 +5,7 @@
              <div class="inner">
                  <div class="row">
                  <div class="col-lg-12">
-                <h1 > แก้ไข ประเภทโบราณวัตถุ ศิลปวัตถุ </h1>
+                <h1 > แก้ไข หมวดหมู่วัตถุ ศิลปวัตถุ </h1>
                 </div>
                 </div>
                 <hr />
@@ -14,7 +14,7 @@
                          <div class="box">
                              <header>
                                  <div class="icons"><i class="icon-th-large"></i></div>
-                                 <h5>แก้ไข ประเภทโบราณวัตถุ ศิลปวัตถุ</h5>
+                                 <h5>แก้ไข หมวดหมู่วัตถุ ศิลปวัตถุ</h5>
                                  <div class="toolbar">
                                      <ul class="nav">
                                          <li>
@@ -38,7 +38,7 @@
                                         foreach ($data as $row){
                                     ?>
                                     <div class="form-group">
-                                         <label class="control-label col-lg-4">ชื่อประเภทโบราณวัตถุ</label>
+                                         <label class="control-label col-lg-4">ชื่อหมวดหมู่วัตถุ</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="artifact_type_name" name="artifact_type_name" value="<?=$row['artifact_type_name']?>" class="form-control" />
                                              <?php echo validation_errors('<div class="error"><label style="color: red;">', '</label></div>'); ?>

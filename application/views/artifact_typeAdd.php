@@ -4,7 +4,7 @@
      <div class="inner">  
          <div class="row">
          <div class="col-lg-12">
-        <h1 > ประเภทโบราณวัตถุ ศิลปวัตถุ </h1> 
+        <h1 > หมวดหมู่วัตถุ ศิลปวัตถุ </h1> 
         </div> 
         </div>
         <hr />
@@ -13,7 +13,7 @@
                  <div class="box">
                      <header> 
                          <div class="icons"><i class="icon-th-large"></i></div>
-                         <h5>ประเภทโบราณวัตถุ ศิลปวัตถุ</h5>
+                         <h5>หมวดหมู่วัตถุ ศิลปวัตถุ</h5>
                          <div class="toolbar">
                              <ul class="nav">
                                  <li>
@@ -35,7 +35,7 @@
                         <?php echo form_open('ArtifactType/add', 'class="form-horizontal" id="block-validate"'); ?>
                          <!-- <form action="#" method="post" class="form-horizontal" id="block-validate"> -->
                             <div class="form-group">
-                                 <label class="control-label col-lg-4">ชื่อประเภทโบราณวัตถุ</label>
+                                 <label class="control-label col-lg-4">ชื่อหมวดหมู่วัตถุ</label>
                                  <div class="col-lg-4">
                                      <input type="text" id="artifact_type_name" name="artifact_type_name" value="<?php echo set_value('artifact_type_name'); ?>"class="form-control" />
                                      <?php echo validation_errors('<div class="error"><label style="color: red;">', '</label></div>'); ?>

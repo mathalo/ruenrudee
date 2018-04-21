@@ -43,7 +43,7 @@
 
                 <li class="panel ">
                     <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#component-nav">
-                        <i class="icon-tasks"> </i> หมวดหมูวัตถุ   
+                        <i class="icon-tasks"> </i> หมวดหมู่วัตถุ   
                         <span class="pull-right">
                           <i class="icon-angle-left"></i>
                         </span>
@@ -64,7 +64,7 @@
                 </li>
                 <!-- <li class="panel">
                     <a href="<?php echo base_url(); ?>ArtifactType" >
-                        <i class="icon-tasks"></i> ประเภทโบราณวัตถุ
+                        <i class="icon-tasks"></i> หมวดหมู่วัตถุ
                     </a>                   
                 </li> -->
                 <li class="panel">
