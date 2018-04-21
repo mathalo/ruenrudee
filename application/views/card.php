@@ -79,27 +79,12 @@ th, td {
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td align="right"  colspan="5"><label class="control-label">คำอธิบายลักษณะ :&nbsp;</label><?php echo $row['artifact_code']; ?></td>
+                                                        <td align="right"  colspan="5"><label class="control-label">คำอธิบายลักษณะ :&nbsp;</label></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">เลขลำดับ :&nbsp; </label><?php echo $row['artifact_no']; ?></td>
-                                                        <td>
-                                                        <label class="control-label">อาคาร :&nbsp;</label>
-                                                            <?php 
-                                                            foreach ($data_location  as $row2){
-                                                                if($row2['location_id']==$row['location_id']){ 
-                                                                    echo $row2['location_name']; 
-                                                                } 
-                                                            }?>
-                                                        ,
-                                                        <label class="control-label">ห้อง : &nbsp;</label>
-                                                        <?php 
-                                                        foreach ($data_location  as $row2){
-                                                            if($row2['location_id']==$row['sub_location_id']){ 
-                                                                echo $row2['location_name']; 
-                                                            } 
-                                                        }?>
-                                                        </td>
+                                                        <td align="right"  ><label class="control-label">ขนาด :&nbsp;</label><?php echo $row['dimension_a']; ?></td>
+                                                        
                                                         <td rowspan="7" valign="top">
                                                             <center>
                                                             <div  class="fileupload fileupload-new" data-provides="fileupload">
@@ -136,12 +121,8 @@ th, td {
                                                         <td><label class="control-label">สภาพ :&nbsp;</label><?php echo $row['condition_']; ?></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">ชื่อวัตถุ :&nbsp;</label><?php echo $row['artifact_name']; ?></td>
-                                                        <td align="right"  ><label class="control-label">ขนาด :&nbsp;</label><?php echo $row['dimension_a']; ?></td>
-                                                    </tr>
-                                                    <tr>
                                                         <td align="right"  ><label class="control-label">เลขเดิม :&nbsp;</label><?php echo $row['old_number']; ?></td>
-                                                        <td align="right"  ><label class="control-label">วัสดุ :&nbsp;</label><?php echo $row['material']; ?></td>
+                                                        <td align="right"  ><label class="control-label">ประวัติ :&nbsp;</label><?php echo $row['history']; ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">รูปแบบศิลปะ :&nbsp;</label>
@@ -152,16 +133,39 @@ th, td {
                                                                 } 
                                                             }?>
                                                         </td>
-                                                        <td align="right"  ><label class="control-label">อายุสมัย :&nbsp;</label><?php echo $row['period']; ?></td>
+                                                        <td>
+                                                        <label class="control-label">อาคาร :&nbsp;</label>
+                                                            <?php 
+                                                            foreach ($data_location  as $row2){
+                                                                if($row2['location_id']==$row['location_id']){ 
+                                                                    echo $row2['location_name']; 
+                                                                } 
+                                                            }?>
+                                                        ,
+                                                        <label class="control-label">ห้อง : &nbsp;</label>
+                                                        <?php 
+                                                        foreach ($data_location  as $row2){
+                                                            if($row2['location_id']==$row['sub_location_id']){ 
+                                                                echo $row2['location_name']; 
+                                                            } 
+                                                        }?>
+                                                        </td>
+                                                        
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">ประเภทวัตถุ :&nbsp;</label><?php echo $row['artifact_type']; ?></td>
+                                                        <td align="right"  ><label class="control-label">อายุสมัย :&nbsp;</label><?php echo $row['period']; ?></td>
+                                                        <td align="right"  ><label class="control-label">Tag location :&nbsp;</label><?php echo $row['tag_location']; ?></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        
+                                                        <td align="right"  ><label class="control-label">วัสดุ :&nbsp;</label><?php echo $row['material']; ?></td>
                                                         <td align="right" valign="top" ><label class="control-label">Note :&nbsp;</label><?=$row['note']?></td>
                                                     </tr>
-                                                    <tr>
+                                                    <!-- <tr>
                                                         <td align="right" valign="top"  ><label class="control-label">ประวัติ :&nbsp;</label><?=$row['history']?></td>
                                                         <td align="right"  ><label class="control-label">condition report by :&nbsp;</label><?php echo $row['condition_report_by']; ?></td>
-                                                    </tr>
+                                                    </tr> -->
 
 
 
