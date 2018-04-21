@@ -2,7 +2,10 @@
 
     @media print
     {
-        #printable { display: block; }
+        #printable { 
+            display: block; 
+            width: 920px;
+        }
         #left { display: none; }
         #non-printable { display: none; }
     }
