@@ -235,8 +235,8 @@ class Search extends My_controller {
 		$query = $this->db->get_where('artifact', array('artifact_id' => $id));
 		$data['data'] = $query->result_array();
 
-		$this->load->view('template/head');
-		$this->load->view('template/header');
+		// $this->load->view('template/head');
+		// $this->load->view('template/header');
 		
 		// $this->menu();
 
@@ -263,7 +263,7 @@ class Search extends My_controller {
 		$data['name'] = $this->session->logged_in['name'];
 		$this->load->view('card', $data);
 
-		$this->load->view('template/footer');
+		// $this->load->view('template/footer');
 	}
 
 	public function getsublocation($id){
