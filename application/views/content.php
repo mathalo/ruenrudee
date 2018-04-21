@@ -1,3 +1,13 @@
+<style>
+#printable { display: none; }
+
+    @media print
+    {
+        #non-printable { display: none; }
+        #left { display: none; }
+        #printable { display: block; }
+    }
+</style>
          <!--PAGE CONTENT -->
          <div id="content">
            
@@ -9,7 +19,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" id="non-printable">
                         <!-- <div class="panel-heading">
                             Basic Elements
                         </div> -->
@@ -132,7 +142,7 @@
 
                     
 
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" id="printable">
                         <form action="<?php echo site_url()?>search/createxls" method="post" id="export-form">
                             Download : 
                             <textarea id='exportsql' name='exportsql' style="display:none;"><?php echo $where;?></textarea>
