@@ -54,7 +54,7 @@ th, td {
     }
 </style>
         <!--PAGE CONTENT -->
-        <!-- <div id="content"> -->
+        <div id="content">
         
              <div class="inner">  
                 <!-- <div class="row">
@@ -213,7 +213,7 @@ th, td {
 
                  
                 </div> 
-            <!-- </div> -->
+            </div>
        <!--END PAGE CONTENT -->
 
 
