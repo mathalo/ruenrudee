@@ -182,24 +182,16 @@ th, td {
                                                         <td align="right"  ><label class="control-label">วัสดุ :&nbsp;</label><?php echo $row['material']; ?></td>
                                                         <td align="right" valign="top" ><label class="control-label">หมายเหตุ :&nbsp;</label><?=$row['note']?></td>
                                                     </tr>
-                                                    <!-- <tr>
-                                                        <td align="right" valign="top"  ><label class="control-label">ประวัติ :&nbsp;</label><?=$row['history']?></td>
-                                                        <td align="right"  ><label class="control-label">condition report by :&nbsp;</label><?php echo $row['condition_report_by']; ?></td>
-                                                    </tr> -->
-
-
-
-
-
-
                                                     
                                                     <tr id="non-printable">
-                                                        <div>
-                                                            <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
-                                                            <button  type="button" id="print_table" class="btn btn-primary ForMargin" onclick="window.print();" >สั่งพิมพ์</button>
-                                                                                                    
-                                                            <button  type="button" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>search/detail/<?php echo $row['artifact_id']; ?>'">ย้อนกลับ</button>
-                                                        </div>
+                                                        <td colspan="3">
+                                                            <div>
+                                                                <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+                                                                <button  type="button" id="print_table" class="btn btn-primary ForMargin" onclick="window.print();" >สั่งพิมพ์</button>
+                                                                                                        
+                                                                <button  type="button" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>search/detail/<?php echo $row['artifact_id']; ?>'">ย้อนกลับ</button>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
