@@ -193,13 +193,14 @@ th, td {
 
 
                                                     
-                                                    <!-- <tr>
-                                                        <td align="right" valign="top" colspan="3">
-                                                            <button  type="button" id="example-10" class="btn btn-primary ForMargin" onclick="window.print();">สั่งพิมพ์</button>
-                                                                    
-                                                            <button  type="button" id="example-10" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>search/detail/<?php echo $row['artifact_id']; ?>'">ย้อนกลับ</button>
-                                                        </td>
-                                                    </tr> -->
+                                                    <tr id="non-printable">
+                                                        <div>
+                                                            <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+                                                            <button  type="button" id="print_table" class="btn btn-primary ForMargin" onclick="window.print();" >สั่งพิมพ์</button>
+                                                                                                    
+                                                            <button  type="button" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>search/detail/<?php echo $row['artifact_id']; ?>'">ย้อนกลับ</button>
+                                                        </div>
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                          </div>
@@ -209,12 +210,12 @@ th, td {
                              </div>
                              
                          <!-- </div> -->
-                         <div id="non-printable">
+                         <!-- <div id="non-printable">
                             <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
                             <button  type="button" id="print_table" class="btn btn-primary ForMargin" onclick="window.print();" >สั่งพิมพ์</button>
                                                                     
                             <button  type="button" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>search/detail/<?php echo $row['artifact_id']; ?>'">ย้อนกลับ</button>
-                        </div>
+                        </div> -->
                      </div>
                  </div>
 
