@@ -18,7 +18,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-default" id="non-printable">
+                    <div class="panel panel-default" id="printable">
                         <!-- <div class="panel-heading">
                             Basic Elements
                         </div> -->
@@ -141,7 +141,7 @@
 
                     
 
-                    <div class="col-lg-12" id="printable">
+                    <div class="col-lg-12" id="non-printable">
                         <form action="<?php echo site_url()?>search/createxls" method="post" id="export-form">
                             Download : 
                             <textarea id='exportsql' name='exportsql' style="display:none;"><?php echo $where;?></textarea>
