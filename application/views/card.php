@@ -134,7 +134,8 @@ th, td {
                                                             }?>
                                                         </td>
                                                         <td>
-                                                        <label class="control-label">อาคาร :&nbsp;</label>
+                                                        <label class="control-label">สถานที่เก็บ: <br>
+                                                        อาคาร&nbsp;</label>
                                                             <?php 
                                                             foreach ($data_location  as $row2){
                                                                 if($row2['location_id']==$row['location_id']){ 
@@ -142,7 +143,7 @@ th, td {
                                                                 } 
                                                             }?>
                                                         ,
-                                                        <label class="control-label">ห้อง : &nbsp;</label>
+                                                        <label class="control-label">ห้อง&nbsp;</label>
                                                         <?php 
                                                         foreach ($data_location  as $row2){
                                                             if($row2['location_id']==$row['sub_location_id']){ 
@@ -158,7 +159,7 @@ th, td {
                                                     </tr>
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">ฝีมือช่าง/designer :&nbsp;</label><?php echo $row['designer']; ?></td>
-                                                        <td align="right"  ><label class="control-label">หมวดหมู่ :&nbsp;</label><?php echo $row['tag_location']; ?></td>
+                                                        <td align="right"  ><label class="control-label">หมวดหมู่ :&nbsp;</label><?php echo $row['artifact_type']; ?></td>
                                                     </tr>
 
                                                     <tr>
