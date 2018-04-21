@@ -2,9 +2,9 @@
 
     @media print
     {
-        #non-printable { display: none; }
+        #non-printable { display: block; }
         #left { display: none; }
-        #printable { display: block; }
+        #printable { display: none; }
     }
 </style>
          <!--PAGE CONTENT -->
