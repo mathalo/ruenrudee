@@ -56,7 +56,7 @@ th, td {
         <!--PAGE CONTENT -->
         <div id="content">
         
-             <div class="inner">  
+             <!-- <div class="inner">   -->
                 <!-- <div class="row">
                 <div class="col-lg-12">
                 <h1 > ข้อมูลวัตถุ ศิลปวัตถุ </h1> 
@@ -219,7 +219,7 @@ th, td {
                  </div>
 
                  
-                </div> 
+                <!-- </div>  -->
             </div>
        <!--END PAGE CONTENT -->
 
