@@ -72,13 +72,15 @@ th, td {
                                                 <thead>
                                                     <tr>
                                                         <td colspan="5">
-                                                            <label class="control-label">ชื่อวัตถุ/รายละเอียดวัตถุชื่อ  </label>
-                                                            
+                                                            <label class="control-label">ชื่อวัตถุ :  </label>
+                                                            <?php echo $row['artifact_name']; ?>
                                                         </td>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-
+                                                    <tr>
+                                                        <td align="right"  colspan="5"><label class="control-label">คำอธิบายลักษณะ :&nbsp;</label><?php echo $row['artifact_code']; ?></td>
+                                                    </tr>
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">เลขลำดับ :&nbsp; </label><?php echo $row['artifact_no']; ?></td>
                                                         <td>
