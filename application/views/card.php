@@ -49,7 +49,8 @@ th, td {
         }
         #non-printable { display: none; }
         #left { display: none; }
-        #printable { display: block; }
+        #printable { display: block; margin-bottom:0px;
+            padding-bottom:0px;}
         #footer { display: none; }
     }
 </style>
