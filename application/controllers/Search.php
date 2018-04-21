@@ -127,7 +127,7 @@ class Search extends My_controller {
 		$this->excel->getActiveSheet()->setCellValue('H1', 'รูปแบบศิลปะ:');
 		$this->excel->getActiveSheet()->setCellValue('I1', 'อาคาร:');
 		$this->excel->getActiveSheet()->setCellValue('J1', 'ห้อง:');
-		$this->excel->getActiveSheet()->setCellValue('K1', 'designer:');
+		$this->excel->getActiveSheet()->setCellValue('K1', 'ฝีมือช่าง/designer:');
 
 		$row_start = 2;
 

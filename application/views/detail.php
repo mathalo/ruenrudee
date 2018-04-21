@@ -210,7 +210,7 @@ tbody tr:hover{
                                                         <td><textarea class="form-control" rows="10" id="description" name="description"><?=$row['description']?></textarea></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">designer :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">ฝีมือช่าง/designer :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['designer']; ?></label></td>
                                                     </tr>
                                                     <tr>

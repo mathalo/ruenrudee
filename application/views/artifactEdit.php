@@ -172,7 +172,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                         <label class="control-label col-lg-4">designer</label>
+                                         <label class="control-label col-lg-4">ฝีมือช่าง/designer</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="designer" name="designer" value="<?=$row['designer']?>"class="form-control" />
                                              <?php echo form_error('designer', '<div class="error"><label style="color: red;">', '</label></div>'); ?>

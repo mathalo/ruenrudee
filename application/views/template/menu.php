@@ -43,7 +43,7 @@
 
                 <li class="panel ">
                     <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#component-nav">
-                        <i class="icon-tasks"> </i> ประเภทวัตถุ   
+                        <i class="icon-tasks"> </i> หมวดหมูวัตถุ   
                         <span class="pull-right">
                           <i class="icon-angle-left"></i>
                         </span>

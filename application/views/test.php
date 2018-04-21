@@ -66,7 +66,7 @@
                                                 <option value="old_number" <?php if(set_value('in_field')=='old_number'){ echo 'selected="selected"'; }?>>เลขเดิม</option>
                                                 <option value="artifact_name" <?php if(set_value('in_field')=='artifact_name'){ echo 'selected="selected"'; }?>>ชื่อวัตถุ</option>
                                                 <option value="period" <?php if(set_value('in_field')=='period'){ echo 'selected="selected"'; }?>>อายุสมัย</option>
-                                                <option value="designer" <?php if(set_value('in_field')=='designer'){ echo 'selected="selected"'; }?>>designer</option>
+                                                <option value="designer" <?php if(set_value('in_field')=='designer'){ echo 'selected="selected"'; }?>>ฝีมือช่าง/designer</option>
                                                 <option value="implement" <?php if(set_value('in_field')=='implement'){ echo 'selected="selected"'; }?>>การนำไปใช้งาน</option>
                                             </select>
                                         </div>
