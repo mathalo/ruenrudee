@@ -8,6 +8,7 @@
         }
         #left { display: none; }
         #non-printable { display: none; }
+        #footer { display: none; }
     }
 </style>
          <!--PAGE CONTENT -->

@@ -44,6 +44,7 @@ th, td {
         #non-printable { display: none; }
         #left { display: none; }
         #printable { display: block; }
+        #footer { display: none; }
     }
 </style>
         <!--PAGE CONTENT -->
@@ -58,7 +59,7 @@ th, td {
                 <hr /> -->
                  <div class="row">
                      <div class="col-lg-12">
-                         <div class="box" >
+                         <!-- <div class="box" > -->
                              
                              <div id="collapseOne" class="accordion-body collapse in body">
                                 
@@ -87,7 +88,7 @@ th, td {
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td align="right"  colspan="5"><label class="control-label">คำอธิบายลักษณะ :&nbsp;</label><?php echo $row['description']; ?></td>
+                                                        <td align="right"  colspan="5"><label class="control-label">ลักษณะ :&nbsp;</label><?php echo $row['description']; ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">เลขลำดับ :&nbsp; </label><?php echo $row['artifact_no']; ?></td>
@@ -201,7 +202,7 @@ th, td {
                                  <?php echo form_close(); ?>
                              </div>
                              
-                         </div>
+                         <!-- </div> -->
                          <div id="non-printable">
                             <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
                             <button  type="button" id="print_table" class="btn btn-primary ForMargin" onclick="window.print();" >สั่งพิมพ์</button>
