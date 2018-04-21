@@ -173,7 +173,7 @@
                                                 <th>ห้อง</th>
                                                 <!-- <th>อายุสมัย</th> -->
                                                 <th>ฝีมือช่าง/designer</th>
-                                                <th>#</th>
+                                                <th  id="non-printable">#</th>
                                             </tr>
                                         </thead>
                                                         
@@ -205,7 +205,7 @@
                                                 <td><?php echo $room ;?></td>
                                                 <!-- <td><?=$row['history']?></td> -->
                                                 <td><?=$row['designer']?></td>
-                                                <td>
+                                                <td  id="non-printable">
                                                     <a onclick="window.location='<?php echo base_url(); ?>search/detail/<?=$row['artifact_id']?>'">
                                                         <button class="btn btn-primary"><i class="icon-search icon-white"></i> ดูรายละเอียด</button>
                                                     </a> 
