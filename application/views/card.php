@@ -54,8 +54,6 @@ th, td {
     }
 </style>
         <!--PAGE CONTENT -->
-        <div id="content">
-        
                 <!-- <div class="row">
                 <div class="col-lg-12">
                 <h1 > ข้อมูลวัตถุ ศิลปวัตถุ </h1> 
@@ -217,8 +215,6 @@ th, td {
                      </div>
                  </div>
 
-
-            </div>
        <!--END PAGE CONTENT -->
 
 
