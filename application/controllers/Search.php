@@ -263,7 +263,7 @@ class Search extends My_controller {
 		$data['name'] = $this->session->logged_in['name'];
 		$this->load->view('card', $data);
 
-		// $this->load->view('template/footer');
+		$this->load->view('template/footer');
 	}
 
 	public function getsublocation($id){
