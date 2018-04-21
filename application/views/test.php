@@ -24,8 +24,8 @@
                                         </div>
                                         
                                         <div class="form-group">
-                                            <label>ประเภทวัตถุ</label>
-                                            <select name="artifact_type[]" id="artifact_type[]" data-placeholder="เลือกประเภทวัตถุ" multiple class="form-control chzn-select  chzn-rtl" >
+                                            <label>หมวดหมู่วัตถุ</label>
+                                            <select name="artifact_type[]" id="artifact_type[]" data-placeholder="เลือกหมวดหมู่วัตถุ" multiple class="form-control chzn-select  chzn-rtl" >
                                             <?php 
                                             foreach ($data_artifact_type as $row2){
                                             ?>
@@ -155,7 +155,7 @@
                                                 <th>เลขวัตถุ</th>
                                                 <th>เลขเดิม</th>
                                                 <th>ชื่อวัตถุ</th>
-                                                <th>ประเภทวัตถุ</th>
+                                                <th>หมวดหมู่วัตถุ</th>
                                                 <th>วัสดุ</th>
                                                 <th>รูปแบบศิลปะ</th>
                                                 <th>อาคาร</th>

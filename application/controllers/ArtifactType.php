@@ -42,7 +42,7 @@ class ArtifactType extends My_controller {
 
 	public function add()
 	{
-		$this->form_validation->set_rules('artifact_type_name', 'ประเภทวัตถุ', 'required');
+		$this->form_validation->set_rules('artifact_type_name', 'หมวดหมู่วัตถุ', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
 		{	
@@ -82,7 +82,7 @@ class ArtifactType extends My_controller {
 
 	public function edit($id)
 	{
-		$this->form_validation->set_rules('artifact_type_name', 'ประเภทวัตถุ', 'required');
+		$this->form_validation->set_rules('artifact_type_name', 'หมวดหมู่วัตถุ', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
 		{

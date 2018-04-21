@@ -85,10 +85,10 @@
                                          </div>
                                      </div>
                                      <div class="form-group">
-                                        <label class="control-label col-lg-4">ประเภทวัตถุ</label>
+                                        <label class="control-label col-lg-4">หมวดหมู่วัตถุ</label>
                                     
                                         <div class="col-lg-8">
-                                            <select name="artifact_type[]" id="artifact_type[]" data-placeholder="เลือกประเภทวัตถุ" multiple class="form-control chzn-select  chzn-rtl" style="width: 350px; height:15px;">
+                                            <select name="artifact_type[]" id="artifact_type[]" data-placeholder="เลือกหมวดหมู่วัตถุ" multiple class="form-control chzn-select  chzn-rtl" style="width: 350px; height:15px;">
                                             <?php 
                                             foreach ($data_artifact_type as $row2){
                                             ?>

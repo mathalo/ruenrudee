@@ -79,7 +79,7 @@ th, td {
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td align="right"  colspan="5"><label class="control-label">คำอธิบายลักษณะ :&nbsp;</label></td>
+                                                        <td align="right"  colspan="5"><label class="control-label">คำอธิบายลักษณะ :&nbsp;</label><?php echo $row['description']; ?></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">เลขลำดับ :&nbsp; </label><?php echo $row['artifact_no']; ?></td>
@@ -156,11 +156,15 @@ th, td {
                                                         <td align="right"  ><label class="control-label">อายุสมัย :&nbsp;</label><?php echo $row['period']; ?></td>
                                                         <td align="right"  ><label class="control-label">Tag location :&nbsp;</label><?php echo $row['tag_location']; ?></td>
                                                     </tr>
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">ฝีมือช่าง/designer :&nbsp;</label><?php echo $row['designer']; ?></td>
+                                                        <td align="right"  ><label class="control-label">หมวดหมู่ :&nbsp;</label><?php echo $row['tag_location']; ?></td>
+                                                    </tr>
 
                                                     <tr>
                                                         
                                                         <td align="right"  ><label class="control-label">วัสดุ :&nbsp;</label><?php echo $row['material']; ?></td>
-                                                        <td align="right" valign="top" ><label class="control-label">Note :&nbsp;</label><?=$row['note']?></td>
+                                                        <td align="right" valign="top" ><label class="control-label">หมายเหตุ :&nbsp;</label><?=$row['note']?></td>
                                                     </tr>
                                                     <!-- <tr>
                                                         <td align="right" valign="top"  ><label class="control-label">ประวัติ :&nbsp;</label><?=$row['history']?></td>
