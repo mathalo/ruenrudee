@@ -44,6 +44,8 @@ th, td {
         body, html {
             margin-top:0px;
             padding-top:0px;
+            margin-bottom:0px;
+            padding-bottom:0px;
         }
         #non-printable { display: none; }
         #left { display: none; }
