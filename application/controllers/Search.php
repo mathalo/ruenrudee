@@ -225,6 +225,7 @@ class Search extends My_controller {
 		$this->load->view('detail', $data);
 
 		$this->load->view('template/footer');
+		
 	}
 
 	public function card($id)
