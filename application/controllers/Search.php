@@ -225,7 +225,7 @@ class Search extends My_controller {
 		$this->load->view('detail', $data);
 
 		$this->load->view('template/footer');
-		
+
 	}
 
 	public function card($id)
@@ -239,7 +239,7 @@ class Search extends My_controller {
 		$this->load->view('template/head');
 		$this->load->view('template/header');
 		
-		// $this->menu();
+		$this->menu();
 
 		$query = $this->db->get('category');
 		$data['data_category'] = $query->result_array();
