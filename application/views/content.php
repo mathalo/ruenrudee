@@ -2,9 +2,9 @@
 
     @media print
     {
-        #non-printable { display: block; }
+        #printable { display: block; }
         #left { display: none; }
-        #printable { display: none; }
+        #non-printable { display: none; }
     }
 </style>
          <!--PAGE CONTENT -->
@@ -18,7 +18,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-default" id="printable">
+                    <div class="panel panel-default" id="non-printable">
                         <!-- <div class="panel-heading">
                             Basic Elements
                         </div> -->
@@ -141,12 +141,14 @@
 
                     
 
-                    <div class="col-lg-12" id="non-printable">
+                    <div class="col-lg-12" id="printable">
                         <form action="<?php echo site_url()?>search/createxls" method="post" id="export-form">
-                            Download : 
-                            <textarea id='exportsql' name='exportsql' style="display:none;"><?php echo $where;?></textarea>
-                            <button type="button" class="btn btn-primary btn-circle" onclick="window.print();" title="Print"><i class="icon-print"></i></button>
-                            <button class="btn btn-success btn-circle" title="Excel"><i class="icon-download-alt"></i></button><br><br>
+                            <div id="non-printable">
+                                Download : 
+                                <textarea id='exportsql' name='exportsql' style="display:none;"><?php echo $where;?></textarea>
+                                <button type="button" class="btn btn-primary btn-circle" onclick="window.print();" title="Print"><i class="icon-print"></i></button>
+                                <button class="btn btn-success btn-circle" title="Excel"><i class="icon-download-alt"></i></button><br><br>
+                            </div>
                         </form> 
                         <div class="panel panel-default">
                             
@@ -220,10 +222,12 @@
                             </div>
                         </div>
                         <form action="<?php echo site_url()?>search/createxls" method="post" id="export-form">
-                            Download : 
-                            <textarea id='exportsql' name='exportsql' style="display:none;"><?php echo $where;?></textarea>
-                            <button type="button" class="btn btn-primary btn-circle" onclick="window.print();"><i class="icon-print"></i></button>
-                            <button class="btn btn-success btn-circle"><i class="icon-download-alt"></i></button><br><br>
+                            <div id="non-printable">
+                                Download : 
+                                <textarea id='exportsql' name='exportsql' style="display:none;"><?php echo $where;?></textarea>
+                                <button type="button" class="btn btn-primary btn-circle" onclick="window.print();" title="Print"><i class="icon-print"></i></button>
+                                <button class="btn btn-success btn-circle" title="Excel"><i class="icon-download-alt"></i></button><br><br>
+                            </div>
                         </form> 
                     </div>
 
