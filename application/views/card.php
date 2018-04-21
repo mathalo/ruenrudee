@@ -56,7 +56,6 @@ th, td {
         <!--PAGE CONTENT -->
         <div id="content">
         
-             <div class="inner">  
                 <!-- <div class="row">
                 <div class="col-lg-12">
                 <h1 > ข้อมูลวัตถุ ศิลปวัตถุ </h1> 
@@ -203,22 +202,22 @@ th, td {
                                                 </tbody>
                                             </table>
                                          </div>
-                                         <div id="non-printable">
-                            <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
-                            <button  type="button" id="print_table" class="btn btn-primary ForMargin" onclick="window.print();" >สั่งพิมพ์</button>
-                                                                    
-                            <button  type="button" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>search/detail/<?php echo $row['artifact_id']; ?>'">ย้อนกลับ</button>
-                        </div>
                                      </div>
                                     <?php }?>
                                  <?php echo form_close(); ?>
                              </div>
                              
                          <!-- </div> -->
-                        
+                         <div id="non-printable">
+                            <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+                            <button  type="button" id="print_table" class="btn btn-primary ForMargin" onclick="window.print();" >สั่งพิมพ์</button>
+                                                                    
+                            <button  type="button" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>search/detail/<?php echo $row['artifact_id']; ?>'">ย้อนกลับ</button>
+                        </div>
                      </div>
                  </div>
-                </div> 
+
+
             </div>
        <!--END PAGE CONTENT -->
 
