@@ -1,5 +1,4 @@
 <style>
-#printable { display: none; }
 
     @media print
     {
