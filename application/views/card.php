@@ -33,7 +33,7 @@ table {
 }
 
 th, td {
-    padding: 10px;
+    padding: 8px;
 }
 
 
@@ -41,6 +41,10 @@ th, td {
 
     @media print
     {
+        body, html {
+            margin-top:0px;
+            padding-top:0px;
+        }
         #non-printable { display: none; }
         #left { display: none; }
         #printable { display: block; }
