@@ -16,6 +16,13 @@ class MY_Controller extends CI_Controller {
 		return true;
 	}
 
+	public function check_getvalue($id, $redirect){
+		if(!isset($id) or filter_var($id, FILTER_VALIDATE_INT) === false){
+			echo "Your variable is not an integer";
+			redirect($redirect);
+		}
+	}
+
 	public function check_permission(){
 		if($this->session->logged_in['permission']!='superadmin'){
 			redirect('Categories');

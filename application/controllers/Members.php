@@ -145,11 +145,7 @@ class Members extends My_controller {
 
 	public function edit($id = '')
 	{
-		if(!isset($id) or filter_var($id, FILTER_VALIDATE_INT) === false){
-			echo "Your variable is not an integer";
-			// redirect('Members');
-			exit;
-		}
+		$this-check_getvalue($id, 'members');
 
 		$this->form_validation->set_rules('name', 'ชื่อสมาชิก', 'required');
 		// $this->form_validation->set_rules('username', 'Username', 'required|callback_validate_username');
@@ -250,7 +246,7 @@ class Members extends My_controller {
 	}
 
 	public function cpassword($id){
-
+		
 		$this->form_validation->set_rules('old_password', 'รหัสผ่าน', 'required');
 		$this->form_validation->set_rules('password', 'รหัสผ่านใหม่', 'required');
 		$this->form_validation->set_rules('confirm_password', 'ยืนยันรหัสผ่าน', 'required|matches[password]');
