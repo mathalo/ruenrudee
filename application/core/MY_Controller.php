@@ -17,7 +17,7 @@ class MY_Controller extends CI_Controller {
 	}
 
 	public function check_getvalue($id, $redirect){
-		if(!isset($id) or filter_var($id, FILTER_VALIDATE_INT) === false){
+		if(!isset($id) or filter_var($id, FILTER_VALIDATE_INT) === false or $id == 0){
 			echo "Your variable is not an integer";
 			redirect($redirect);
 		}
