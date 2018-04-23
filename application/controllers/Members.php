@@ -145,7 +145,7 @@ class Members extends My_controller {
 
 	public function edit($id = 0)
 	{
-		$this-check_getvalue($id, 'members');
+		$this->check_getvalue($id, 'members');
 
 		$this->form_validation->set_rules('name', 'ชื่อสมาชิก', 'required');
 		// $this->form_validation->set_rules('username', 'Username', 'required|callback_validate_username');
