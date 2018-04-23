@@ -143,10 +143,11 @@ class Members extends My_controller {
 		$this->load->view('template/footer');
 	}
 
-	public function edit($id)
+	public function edit($id = '')
 	{
 		if(!isset($id) or filter_var($id, FILTER_VALIDATE_INT) === false){
 			echo "Your variable is not an integer";
+			// redirect('Members');
 			exit;
 		}
 
