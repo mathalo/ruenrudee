@@ -27,22 +27,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script type="text/javascript">
-      var verifyCallback = function(response) {
-        alert(response);
-      };
-      var widgetId1;
-      var onloadCallback = function() {
-        // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
-        // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
-        widgetId1 = grecaptcha.render('example1', {
-          'sitekey' : 'your_site_key',
-          'theme' : 'light'
-        });
-        
-      };
-    </script>
 </head>
     <!-- END HEAD -->
 
@@ -72,13 +56,8 @@
                     <input type="password" name="password" placeholder="Password" class="form-control" />
                     <?php echo form_error('password', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
                     <button class="btn text-muted text-center btn-success" type="submit">เข้าสู่ระบบ</button>
-                    <button class="btn text-muted text-center btn-danger" type="button" onclick="window.lo  cation='<?php echo base_url(); ?>search'">กลับสู่หน้าค้นหา</i></button>
-                    <div id="example1"></div>
+                    <button class="btn text-muted text-center btn-danger" type="button" onclick="window.location='<?php echo base_url(); ?>search'">กลับสู่หน้าค้นหา</i></button>
                 </form>
-                
-                <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-                    async defer>
-                </script>
             </div>
             <!--
             <div id="forgot" class="tab-pane">
