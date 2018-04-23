@@ -145,7 +145,11 @@ class Members extends My_controller {
 
 	public function edit($id)
 	{
-		
+		if(filter_var($id, FILTER_VALIDATE_INT) === false){
+			echo "Your variable is not an integer";
+			exit;
+		}
+
 		$this->form_validation->set_rules('name', 'ชื่อสมาชิก', 'required');
 		// $this->form_validation->set_rules('username', 'Username', 'required|callback_validate_username');
 		$this->form_validation->set_rules('email', 'อีเมล์', 'required|valid_email');
