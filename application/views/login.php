@@ -27,11 +27,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript">
-    var onloadCallback = function() {
-        alert("grecaptcha is ready!");
-    };
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript">
       var onloadCallback = function() {
         grecaptcha.render('html_element', {
@@ -68,7 +64,7 @@
                     <input type="password" name="password" placeholder="Password" class="form-control" />
                     <?php echo form_error('password', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
                     <button class="btn text-muted text-center btn-success" type="submit">เข้าสู่ระบบ</button>
-                    <button class="btn text-muted text-center btn-danger" type="button" onclick="window.location='<?php echo base_url(); ?>search'">กลับสู่หน้าค้นหา</i></button>
+                    <button class="btn text-muted text-center btn-danger" type="button" onclick="window.lo  cation='<?php echo base_url(); ?>search'">กลับสู่หน้าค้นหา</i></button>
                 </form>
                 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
                     async defer>
