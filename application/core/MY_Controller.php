@@ -21,6 +21,7 @@ class MY_Controller extends CI_Controller {
 			echo "Your variable is not an integer";
 			redirect($redirect);
 		}
+		return true;
 	}
 
 	public function check_permission(){

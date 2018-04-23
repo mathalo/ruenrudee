@@ -143,7 +143,7 @@ class Members extends My_controller {
 		$this->load->view('template/footer');
 	}
 
-	public function edit($id = '')
+	public function edit($id = 0)
 	{
 		$this-check_getvalue($id, 'members');
 
