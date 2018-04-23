@@ -213,8 +213,10 @@ class Members extends My_controller {
 		$this->load->view('template/footer');
 	}
 
-	public function delete($id)
+	public function delete($id = 0)
 	{
+		$this->check_getvalue($id, 'members');
+
 		$this->db->where('member_id', $id);
 		$this->db->delete('member'); 
 		redirect('Members');
@@ -246,6 +248,8 @@ class Members extends My_controller {
 	}
 
 	public function cpassword($id){
+		
+		$this->check_getvalue($id, 'members');
 		
 		$this->form_validation->set_rules('old_password', 'รหัสผ่าน', 'required');
 		$this->form_validation->set_rules('password', 'รหัสผ่านใหม่', 'required');
