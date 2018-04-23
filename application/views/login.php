@@ -33,11 +33,10 @@
         alert(response);
       };
       var widgetId1;
-      var widgetId2;
       var onloadCallback = function() {
         // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
         // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
-        widgetId1 = grecaptcha.render('login', {
+        widgetId1 = grecaptcha.render('example1', {
           'sitekey' : 'your_site_key',
           'theme' : 'light'
         });
@@ -74,7 +73,9 @@
                     <?php echo form_error('password', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
                     <button class="btn text-muted text-center btn-success" type="submit">เข้าสู่ระบบ</button>
                     <button class="btn text-muted text-center btn-danger" type="button" onclick="window.lo  cation='<?php echo base_url(); ?>search'">กลับสู่หน้าค้นหา</i></button>
+                    <div id="example1"></div>
                 </form>
+                
                 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
                     async defer>
                 </script>
