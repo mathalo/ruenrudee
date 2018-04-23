@@ -27,6 +27,18 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+    var onloadCallback = function() {
+        alert("grecaptcha is ready!");
+    };
+    </script>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : 'your_site_key'
+        });
+      };
+    </script>
 </head>
     <!-- END HEAD -->
 
@@ -58,6 +70,9 @@
                     <button class="btn text-muted text-center btn-success" type="submit">เข้าสู่ระบบ</button>
                     <button class="btn text-muted text-center btn-danger" type="button" onclick="window.location='<?php echo base_url(); ?>search'">กลับสู่หน้าค้นหา</i></button>
                 </form>
+                <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                    async defer>
+                </script>
             </div>
             <!--
             <div id="forgot" class="tab-pane">

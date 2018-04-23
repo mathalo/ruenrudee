@@ -86,6 +86,8 @@ class Objects extends My_controller {
 
 	public function edit($id)
 	{
+		$this->check_getvalue($id, 'objects');
+
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('cat_name', 'Category name', 'required');
@@ -125,8 +127,14 @@ class Objects extends My_controller {
 
 	public function delete($id)
 	{
+		$this->check_getvalue($id, 'objects');
+		
+		$data = array(
+			'status' => 'closed'
+		);
+		
 		$this->db->where('cat_id', $id);
-		$this->db->delete('category'); 
+		$this->db->update('category', $data); 
 		redirect('category');
 	}
 }
