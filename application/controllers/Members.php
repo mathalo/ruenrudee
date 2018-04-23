@@ -145,7 +145,7 @@ class Members extends My_controller {
 
 	public function edit($id)
 	{
-		if(!isset($id) and filter_var($id, FILTER_VALIDATE_INT) === false){
+		if(!isset($id) or filter_var($id, FILTER_VALIDATE_INT) === false){
 			echo "Your variable is not an integer";
 			exit;
 		}
