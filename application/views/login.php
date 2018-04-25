@@ -29,7 +29,10 @@
     <![endif]-->
     <script type="text/javascript">
         var verifyCallback = function(response) {
-        alert(response);
+            {
+                "success": true,
+            }
+            alert(verifyCallback);
         };
         var onloadCallback = function() {
         
