@@ -6,7 +6,7 @@ class Login extends My_controller {
 
 	public function __construct() {
         parent::__construct();
-        
+        $this->load->helper('captcha');
     }
     
     public function index() {
