@@ -9,7 +9,7 @@
 
       var onloadCallback = function() {
         grecaptcha.render('submit', {
-          'sitekey' : 'your_site_key',
+          'sitekey' : 'LfrblUUAAAAALiX2rvaPoijbiE_2IQVhD-qIriW',
           'callback' : onSubmit
         });
       };
