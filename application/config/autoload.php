@@ -103,7 +103,7 @@ $autoload['helper'] = array('url', 'form', 'file', 'cookie');
 | config files.  Otherwise, leave it blank.
 |
 */
-$autoload['config'] = array('recaptcha');
+$autoload['config'] = array();
 
 /*
 | -------------------------------------------------------------------
@@ -117,7 +117,7 @@ $autoload['config'] = array('recaptcha');
 | "codeigniter_lang.php" would be referenced as array('codeigniter');
 |
 */
-$autoload['language'] = array('recaptcha');
+$autoload['language'] = array();
 
 /*
 | -------------------------------------------------------------------
