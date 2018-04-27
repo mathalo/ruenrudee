@@ -12,8 +12,19 @@ class Login extends My_controller {
     public function index() {
     
         // $this->form_validation->set_rules('username', 'Username', 'trim|required');
-       $this->form_validation->set_rules('password', 'Password', 'callback_validate_user');
-    
+        $this->form_validation->set_rules('password', 'Password', 'callback_validate_user');
+
+        $posts = $this->input->post();        
+        
+        if(isset($_POST['g-recaptcha-response'])){
+            echo $captcha=$_POST['g-recaptcha-response'];
+            echo 12344;
+        }
+        if(!$captcha){ 
+            echo '<h2>Please check the the captcha form.</h2>';
+            exit;
+        }
+
         if ($this->form_validation->run() == FALSE) {
             // $this->load->view('template/head');
             // $this->load->view('template/header');
