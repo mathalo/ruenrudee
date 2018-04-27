@@ -44,8 +44,8 @@ class Login extends My_controller {
             if(intval($responseKeys["success"]) !== 1) {
                 echo '<h2>You are spammer ! Get the @$%K out</h2>';
             } else {
-                //redirect('Artifact');
                 echo '<h2>Logined.</h2>';
+                redirect('Artifact');
             }
 
             
