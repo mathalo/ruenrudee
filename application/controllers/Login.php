@@ -16,24 +16,7 @@ class Login extends My_controller {
 
         $posts = $this->input->post();        
         
-        if(isset($posts['g-recaptcha-response'])){
-            echo $captcha=$posts['g-recaptcha-response'];
-            echo 12344;
-        }
-        if(!$captcha){ 
-            echo '<h2>Please check the captcha form.</h2>';
-            exit;
-        }
-
-        $secretKey = "Put your secret key here";
-        $ip = $_SERVER['REMOTE_ADDR'];
-        $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
-        $responseKeys = json_decode($response,true);
-        if(intval($responseKeys["success"]) !== 1) {
-          echo '<h2>You are spammer ! Get the @$%K out</h2>';
-        } else {
-          echo '<h2>Thanks for posting comment.</h2>';
-        }
+        
 
         if ($this->form_validation->run() == FALSE) {
             // $this->load->view('template/head');
@@ -44,6 +27,26 @@ class Login extends My_controller {
             // $this->load->view('template/footer');
     
         } else {
+
+            if(isset($_POST['g-recaptcha-response'])){
+                echo $captcha=$_POST['g-recaptcha-response'];
+                echo 12344;
+            }
+            if(!$captcha){ 
+                echo '<h2>Please check the captcha form.</h2>';
+                exit;
+            }
+    
+            $secretKey = "Put your secret key here";
+            $ip = $_SERVER['REMOTE_ADDR'];
+            $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
+            $responseKeys = json_decode($response,true);
+            
+            if(intval($responseKeys["success"]) !== 1) {
+              echo '<h2>You are spammer ! Get the @$%K out</h2>';
+            } else {
+              echo '<h2>Thanks for posting comment.</h2>';
+            }
 
             redirect('Artifact');
         }
