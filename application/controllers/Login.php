@@ -66,7 +66,7 @@ class Login extends My_controller {
 
             $data = $query->result_array();
 
-            if($data[0]['permission']==1){ $permission = 'superadmin'; }else{ $permission = 'admin'; }
+            if($data[0]['permission']==1){ $permission = 'root'; }else if($data[0]['permission']==2){ $permission = 'superadmin';}else{ $permission = 'admin'; }
             $data_session = array(
                 'is_logged' => true,
                 'member_id' => $data[0]['member_id'],

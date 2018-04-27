@@ -5,7 +5,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2> ข้อมูลสมาชิก <?php echo $this->session->logged_in['permission'];?></h2>
+                        <h2> ข้อมูลสมาชิก <?php echo $this->session->logged_in['permission']; ?></h2>
 
                     </div>
                 </div>
@@ -50,9 +50,11 @@
                                                 <a onclick="window.location='<?php echo base_url(); ?>Members/edit/<?=$row['member_id']?>'">
                                                     <button class="btn btn-primary"><i class="icon-pencil icon-white"></i> แก้ไข</button>
                                                 </a> 
+                                                <?php if($this->session->logged_in['permission'] != 'admin'){ ?>
                                                 <a onclick="confirm_del(<?=$row['member_id']?>)">
                                                     <button class="btn btn-danger"><i class="icon-remove icon-white"></i> ลบ</button>
                                                 </a>
+                                                <?php }?>
                                             </td>
                                         </tr>
                                         <?php
