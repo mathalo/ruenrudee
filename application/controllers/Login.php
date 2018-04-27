@@ -16,8 +16,8 @@ class Login extends My_controller {
 
         $posts = $this->input->post();        
         
-        if(isset($_POST['g-recaptcha-response'])){
-            echo $captcha=$_POST['g-recaptcha-response'];
+        if(isset($posts['g-recaptcha-response'])){
+            echo $captcha=$posts['g-recaptcha-response'];
             echo 12344;
         }
         if(!$captcha){ 
