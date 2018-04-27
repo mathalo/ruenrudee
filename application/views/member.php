@@ -5,7 +5,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2> ข้อมูลสมาชิก <?php echo $permission;?></h2>
+                        <h2> ข้อมูลสมาชิก </h2>
 
                     </div>
                 </div>
@@ -47,12 +47,14 @@
                                                 <!-- <div class="make-switch switch-small">
                                                     <input type="checkbox" checked="checked" name="status" value="open" />
                                                 </div> -->
-                                                <a onclick="window.location='<?php echo base_url(); ?>Members/edit/<?=$row['member_id']?>'">
-                                                    <button class="btn btn-primary"><i class="icon-pencil icon-white"></i> แก้ไข</button>
-                                                </a> 
-                                                <a onclick="confirm_del(<?=$row['member_id']?>)">
-                                                    <button class="btn btn-danger"><i class="icon-remove icon-white"></i> ลบ</button>
-                                                </a>
+                                                <?php if($this->session->logged_in['permission']=='superadmin' or $this->session->logged_in['permission']=='admin'){ ?>
+                                                    <a onclick="window.location='<?php echo base_url(); ?>Members/edit/<?=$row['member_id']?>'">
+                                                        <button class="btn btn-primary"><i class="icon-pencil icon-white"></i> แก้ไข</button>
+                                                    </a> 
+                                                    <a onclick="confirm_del(<?=$row['member_id']?>)">
+                                                        <button class="btn btn-danger"><i class="icon-remove icon-white"></i> ลบ</button>
+                                                    </a>
+                                                <?php }?>
                                             </td>
                                         </tr>
                                         <?php
@@ -65,7 +67,9 @@
                            
                         </div>
                     </div>
-                    <button id="example-10" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>Members/add'">เพิ่มข้อมูล</button>
+                    <?php if($this->session->logged_in['permission']=='superadmin' or $this->session->logged_in['permission']=='admin'){ ?>
+                        <button id="example-10" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>Members/add'">เพิ่มข้อมูล</button>
+                    <?php if($this->session->logged_in['permission']=='superadmin' or $this->session->logged_in['permission']=='admin'){ ?>
                 </div>
             </div>
             </div>
