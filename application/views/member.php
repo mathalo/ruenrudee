@@ -5,7 +5,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2> ข้อมูลสมาชิก</h2>
+                        <h2> ข้อมูลสมาชิก <?php echo $permission;?></h2>
 
                     </div>
                 </div>
