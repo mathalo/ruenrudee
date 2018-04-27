@@ -32,7 +32,7 @@ class Login extends My_controller {
                 echo $captcha = $_POST['g-recaptcha-response'];
             }
             if(!$captcha){ 
-                $this->load->view('login');
+                redirect('Artifact');
                 exit;
             }
     
