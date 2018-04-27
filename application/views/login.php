@@ -61,7 +61,7 @@
                         <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" width="150" height="200" alt=" Logo" />
                         <!-- <img src="<?php echo base_url(); ?>assets/img/logo_ps.jpg" id="logoimg" alt=" Logo" /> -->
                 </center>
-                <?php echo form_open('Login/', 'class="form-signin" id="block-validate"'); ?>
+                <?php echo form_open('Login/', 'class="form-signin" id="block-validate", method="post"'); ?>
                     <p class="text-muted text-center btn-block btn-primary">
                     เข้าสู่ระบบ
                     </p>

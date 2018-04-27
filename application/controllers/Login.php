@@ -10,7 +10,7 @@ class Login extends My_controller {
     }
     
     public function index() {
-        $email;$comment;$captcha;
+        $captcha = '';
         // $this->form_validation->set_rules('username', 'Username', 'trim|required');
         $this->form_validation->set_rules('password', 'Password', 'callback_validate_user');
 
