@@ -32,7 +32,7 @@ class Login extends My_controller {
                 echo $captcha = $_POST['g-recaptcha-response'];
             }
             if(!$captcha){ 
-                echo '<h2>Please check the captcha form.</h2>';
+                echo '<h2>Please check the login form.</h2>';
                 exit;
             }
     
@@ -45,6 +45,7 @@ class Login extends My_controller {
                 echo '<h2>You are spammer ! Get the @$%K out</h2>';
             } else {
                 //redirect('Artifact');
+                echo '<h2>Logined.</h2>';
             }
 
             
