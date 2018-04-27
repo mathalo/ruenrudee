@@ -65,6 +65,8 @@ class Location extends My_controller {
 
 	public function edit($id)
 	{
+		$this->check_getvalue($id, 'location');
+
 		$this->form_validation->set_rules('location_name', 'ชื่อห้อง', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
@@ -105,6 +107,8 @@ class Location extends My_controller {
 
 	public function delete($id)
 	{
+		$this->check_getvalue($id, 'location');
+		
 		$data = array(
 			'status' => 'closed',
 		);

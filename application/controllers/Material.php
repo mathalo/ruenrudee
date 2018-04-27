@@ -64,6 +64,8 @@ class Material extends My_controller {
 
 	public function edit($id)
 	{
+		$this->check_getvalue($id, 'material');
+
 		$this->form_validation->set_rules('material_name', 'ชื่อวัสดุ', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
@@ -100,6 +102,8 @@ class Material extends My_controller {
 
 	public function delete($id)
 	{
+		$this->check_getvalue($id, 'material');
+		
 		$data = array(
 			'status' => 'closed',
 		);

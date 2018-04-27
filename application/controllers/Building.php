@@ -11,7 +11,8 @@ class Building extends My_controller {
 	
 	public function type($id)
 	{
-		
+		$this->check_getvalue($id, 'building');
+
 		$this->load->view('template/head.php');
 		$this->load->view('template/header.php');
 
@@ -81,6 +82,8 @@ class Building extends My_controller {
 
 	public function edit($id)
 	{
+		$this->check_getvalue($id, 'building');
+
 		$this->form_validation->set_rules('location_name', 'ชื่ออาคาร', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
@@ -121,6 +124,8 @@ class Building extends My_controller {
 
 	public function delete($id)
 	{
+		$this->check_getvalue($id, 'building');
+		
 		$data = array(
 			'status' => 'closed',
 		);
