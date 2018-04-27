@@ -11,7 +11,8 @@ class ArtifactType extends My_controller {
 
 	public function type($id)
 	{
-
+		$this->check_getvalue($id, 'artifactType');
+		
 		$this->load->view('template/head.php');
 		$this->load->view('template/header.php');
 
@@ -82,6 +83,8 @@ class ArtifactType extends My_controller {
 
 	public function edit($id)
 	{
+		$this->check_getvalue($id, 'artifactType');
+
 		$this->form_validation->set_rules('artifact_type_name', 'หมวดหมู่วัตถุ', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
@@ -122,6 +125,8 @@ class ArtifactType extends My_controller {
 
 	public function delete($id)
 	{
+		$this->check_getvalue($id, 'artifactType');
+		
 		$data = array(
 			'status' => 'closed',
 		);

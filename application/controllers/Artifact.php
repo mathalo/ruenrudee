@@ -12,6 +12,8 @@ class Artifact extends My_controller {
 
 	public function gallery($id){
 		//echo  $this->uri->segment(3); exit;
+		$this->check_getvalue($id, 'artifact');
+
 		$query = $this->db->get_where('artifact', array('artifact_id' => $id));
 		$data['data'] = $query->result_array();
 		$data['id'] = (int)$id;
@@ -250,6 +252,8 @@ class Artifact extends My_controller {
 
 	public function edit($id)
 	{
+		$this->check_getvalue($id, 'artifact');
+
 		$this->form_validation->set_rules('artifact_no', 'เลขลำดับ', 'required');
 		$this->form_validation->set_rules('artifact_code', 'เลขวัตถุ', 'required');
 		$this->form_validation->set_rules('artifact_name', 'ชื่อวัตถุ', 'required');
@@ -439,6 +443,8 @@ class Artifact extends My_controller {
 	
 	public function delete($id)
 	{
+		$this->check_getvalue($id, 'artifact');
+		
 		$data = array(
 			'status' => 'closed',
 		);
