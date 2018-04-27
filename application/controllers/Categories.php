@@ -11,7 +11,8 @@ class Categories extends MY_Controller {
 	
 	public function type($id)
 	{
-		
+		$this->check_getvalue($id, 'categories');
+
 		$this->load->view('template/head.php');
 		$this->load->view('template/header.php');
 
@@ -85,6 +86,8 @@ class Categories extends MY_Controller {
 
 	public function edit($id)
 	{
+		$this->check_getvalue($id, 'categories');
+
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('cat_name', 'รูปแบบศิลปะ', 'required');
@@ -127,6 +130,8 @@ class Categories extends MY_Controller {
 
 	public function delete($id)
 	{
+		$this->check_getvalue($id, 'categories');
+		
 		$data = array(
 			'status' => 'closed',
 		);

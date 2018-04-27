@@ -120,6 +120,8 @@ class Profile extends My_controller {
 
 	public function cpassword($id){	
 		
+		$this->check_getvalue($id, 'profile');
+
 		$this->form_validation->set_rules('old_password', 'รหัสผ่าน', 'required');
 		$this->form_validation->set_rules('password', 'รหัสผ่านใหม่', 'required');
 		$this->form_validation->set_rules('confirm_password', 'ยืนยันรหัสผ่าน', 'required|matches[password]');
