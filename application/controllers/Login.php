@@ -29,11 +29,10 @@ class Login extends My_controller {
         } else {
 
             if(isset($_POST['g-recaptcha-response'])){
-                echo $captcha=$_POST['g-recaptcha-response'];
-                echo 12344;
+                echo $captcha = $_POST['g-recaptcha-response'];
             }
             if(!$captcha){ 
-                echo '<h2>Please check the captcha form.</h2>';
+                $this->load->view('login');
                 exit;
             }
     
@@ -43,10 +42,9 @@ class Login extends My_controller {
             $responseKeys = json_decode($response,true);
 
             if(intval($responseKeys["success"]) !== 1) {
-              echo '<h2>You are spammer ! Get the @$%K out</h2>';
+                echo '<h2>You are spammer ! Get the @$%K out</h2>';
             } else {
                 //redirect('Artifact');
-              echo '<h2>Thanks for posting comment.</h2>';
             }
 
             
