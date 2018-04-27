@@ -37,18 +37,19 @@ class Login extends My_controller {
                 exit;
             }
     
-            $secretKey = "Put your secret key here";
+            $secretKey = "6LfrblUUAAAAACBQiAOuxFJ7rwZJ_34_1_fp4P98";
             $ip = $_SERVER['REMOTE_ADDR'];
             $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
             $responseKeys = json_decode($response,true);
-            
+
             if(intval($responseKeys["success"]) !== 1) {
               echo '<h2>You are spammer ! Get the @$%K out</h2>';
             } else {
+                //redirect('Artifact');
               echo '<h2>Thanks for posting comment.</h2>';
             }
 
-            redirect('Artifact');
+            
         }
     }
     
