@@ -21,7 +21,7 @@ class Login extends My_controller {
             echo 12344;
         }
         if(!$captcha){ 
-            echo '<h2>Please check the the captcha form.</h2>';
+            echo '<h2>Please check the captcha form.</h2>';
             exit;
         }
 
