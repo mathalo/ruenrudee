@@ -16,7 +16,7 @@
                         <i class="icon-tasks"></i> ข้อมูลส่วนตัว
                     </a>                   
                 </li>   
-                <?php if($this->session->logged_in['permission']!='superadmin'){ ?>
+                <?php if($this->session->logged_in['permission']!='admin'){ ?>
                 <li class="panel">
                     <a href="<?php echo base_url(); ?>Members" >
                         <i class="icon-tasks"></i> ข้อมูลสมาชิก

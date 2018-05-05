@@ -25,7 +25,7 @@ class MY_Controller extends CI_Controller {
 	}
 
 	public function check_permission(){
-		if($this->session->logged_in['permission']!='superadmin'){
+		if($this->session->logged_in['permission']!='root' or $this->session->logged_in['permission']!='superadmin'){
 			redirect('Categories');
 		}
 		return true;
