@@ -14,7 +14,7 @@
                          <div class="box">
                              <header> 
                                  <div class="icons"><i class="icon-th-large"></i></div>
-                                 <h5>เพิ่ม ัสดุ</h5>
+                                 <h5>เพิ่มวัสดุ</h5>
                                  <div class="toolbar">
                                      <ul class="nav">
                                          <li>
