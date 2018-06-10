@@ -26,7 +26,7 @@ class MY_Controller extends CI_Controller {
 
 	public function check_permission(){
 		if($this->session->logged_in['permission']=='admin' ){
-			redirect('Categories');
+			redirect('search');
 		}
 		return true;
 	}

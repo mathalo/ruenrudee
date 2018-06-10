@@ -5,7 +5,7 @@
              <div class="inner">  
                  <div class="row">
                  <div class="col-lg-12">
-                <h1 > เพิ่ม Material </h1> 
+                <h1 > เพิ่มวัสดุ </h1> 
                 </div> 
                 </div>
                 <hr />
@@ -14,7 +14,7 @@
                          <div class="box">
                              <header> 
                                  <div class="icons"><i class="icon-th-large"></i></div>
-                                 <h5>เพิ่ม Material</h5>
+                                 <h5>เพิ่ม ัสดุ</h5>
                                  <div class="toolbar">
                                      <ul class="nav">
                                          <li>
