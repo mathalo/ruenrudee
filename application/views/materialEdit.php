@@ -5,7 +5,7 @@
              <div class="inner">
                  <div class="row">
                  <div class="col-lg-12">
-                <h1 > แก้ไข Material </h1>
+                <h1 > แก้ไขวัสดุ </h1>
                 </div>
                 </div>
                 <hr />
@@ -14,7 +14,7 @@
                          <div class="box">
                              <header>
                                  <div class="icons"><i class="icon-th-large"></i></div>
-                                 <h5>แก้ไข Material</h5>
+                                 <h5>แก้ไขวัสดุ</h5>
                                  <div class="toolbar">
                                      <ul class="nav">
                                          <li>
