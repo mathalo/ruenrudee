@@ -14,7 +14,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                        หมวดหมู่
+                        รูปแบบศิลปะ
                         </div>
                         
                         <div class="panel-body">
@@ -25,7 +25,7 @@
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>หมวดหมู่</th>
+                                            <th>รูปแบบศิลปะ</th>
                                             <th>#</th>
                                         </tr>
                                     </thead>
