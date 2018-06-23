@@ -5,7 +5,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2> หมวดหมู่</h2>
+                        <h2> รูปแบบศิลปะ</h2>
  
                     </div>
                 </div>
