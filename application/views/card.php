@@ -94,7 +94,7 @@ th, td {
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td align="right"  colspan="5"><label class="control-label">ลักษณะ :&nbsp;</label><?php echo $row['description']; ?></td>
+                                                        <td align="right"  colspan="5"><label class="control-label">ลักษณะ :&nbsp;</label><p><?php echo $row['description']; ?></p></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">เลขลำดับ :&nbsp; </label><?php echo $row['artifact_no']; ?></td>
