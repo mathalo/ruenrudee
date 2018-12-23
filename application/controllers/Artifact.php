@@ -235,7 +235,7 @@ class Artifact extends My_controller {
 		$query = $this->db->get('category');
 		$data['data_category'] = $query->result_array();
 		
-        $query = $this->db->get('material');
+        $query = $this->db->get_where('material', array('status' => 'open'));
 		$data['data_material'] = $query->result_array();
 		
 		$query = $this->db->get_where('location', array('parent_id' => 0));
@@ -418,7 +418,7 @@ class Artifact extends My_controller {
 		$query = $this->db->get('category');
 		$data['data_category'] = $query->result_array();
 		
-        $query = $this->db->get('material');
+        $query = $this->db->get_where('material', array('status' => 'open'));
 		$data['data_material'] = $query->result_array();
 		
 		$query = $this->db->get_where('location', array('parent_id' => 0));
