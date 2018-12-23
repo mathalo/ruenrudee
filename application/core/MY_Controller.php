@@ -33,13 +33,13 @@ class MY_Controller extends CI_Controller {
 
 	public function menu(){
 
-		$query_menu = $this->db->get_where('category', array('parent_id' => 0));
+		$query_menu = $this->db->get_where('category', array('parent_id' =>, 'status' => 0));
 		$data['menu'] = $query_menu->result_array();
 
-		$query_menu2 = $this->db->get_where('artifact_type', array('parent_id' => 0));
+		$query_menu2 = $this->db->get_where('artifact_type', array('parent_id' => 0, 'status' => 0));
 		$data['menu2'] = $query_menu2->result_array();
 
-		$query_menu3 = $this->db->get_where('location', array('parent_id' => 0));
+		$query_menu3 = $this->db->get_where('location', array('parent_id' => 0, 'status' => 0));
 		$data['menu3'] = $query_menu3->result_array();
 
 		$this->load->view('template/menu.php', $data);
