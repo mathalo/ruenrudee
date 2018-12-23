@@ -96,12 +96,12 @@
                                         </div>
                                         <script>
                                             function selectlocation(val){
-                                                // alert('<?php echo base_url()."content/getsublocation/";?>'+val);
+                                                // alert('<?php echo base_url()."search/getsublocation/";?>'+val);
                                                 if(val !=''){
                                                     $.ajax({
                                                         type: 'POST',
                                                         async: false,
-                                                        url: '<?php echo base_url()."content/getsublocation/";?>'+val, 
+                                                        url: '<?php echo base_url()."search/getsublocation/";?>'+val, 
                                                         
                                                         success: function(resp) {
                                                             console.log( resp );
