@@ -89,7 +89,7 @@ class Search extends My_controller {
 			
 		}else{
 			// $query = $this->db->get('artifact');
-			$select_query = "Select * from artifact inner join category on category.cat_id=artifact.cat_id  inner join location on location.location_id=artifact.location_id ";
+			$select_query = "Select * from artifact inner join category on category.cat_id=artifact.cat_id  inner join location on location.location_id=artifact.location_id order by artifact.artifact_no asc";
 			
 			$query = $this->db->query($select_query);
 			$data['where'] = $select_query;
