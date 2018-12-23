@@ -99,7 +99,7 @@ class Search extends My_controller {
 		$data['data'] = $query->result_array();
 
 
-		$query = $this->db->get_where('location', array('parent_id !=' => 0));
+		$query = $this->db->get_where('location', array('parent_id !=' => 0, 'status' => 'open'));
 		$data['data_sub_location'] = $query->result_array();
 		
 
