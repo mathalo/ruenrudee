@@ -9,21 +9,27 @@
                         <i class="icon-tasks"></i> ค้นข้อมูล
                     </a>                   
                 </li>   
-
-                <?php if($this->session->logged_in['permission']!=''){ ?>
                 <li class="panel">
-                    <a href="<?php echo base_url(); ?>Profile" >
-                        <i class="icon-tasks"></i> ข้อมูลส่วนตัว
+                    <a href="<?php echo base_url(); ?>Artifact" >
+                        <i class="icon-tasks"></i> ข้อมูลโบราณวัตถุ
                     </a>                   
-                </li>   
-                <?php if($this->session->logged_in['permission']!='admin'){ ?>
-                <li class="panel">
-                    <a href="<?php echo base_url(); ?>Members" >
-                        <i class="icon-tasks"></i> ข้อมูลสมาชิก
-                    </a>                   
-                </li>   
-                <?php }?>
-                
+                </li>
+                <li class="panel ">
+                    <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#component-nav">
+                        <i class="icon-tasks"> </i> หมวดหมู่วัตถุ   
+                        <span class="pull-right">
+                          <i class="icon-angle-left"></i>
+                        </span>
+                    </a>
+                    <ul class="collapse" id="component-nav">
+                        <li class=""><a href="<?php echo base_url(); ?>ArtifactType"><i class="icon-angle-right"></i> ทั้งหมด </a></li>
+                        <?php 
+                            foreach ($menu2 as $mrow){
+                        ?>
+                         <li class=""><a href="<?php echo base_url(); ?>ArtifactType/type/<?php echo $mrow['artifact_type_id'];?>"><i class="icon-angle-right"></i> <?php echo $mrow['artifact_type_name'];?></a></li>
+                            <?php }?>
+                    </ul>
+                </li>
                 <li class="panel">
                     <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#chart-nav">
                         <i class="icon-tasks"></i> รูปแบบศิลปะ
@@ -43,22 +49,7 @@
                 </li>
 
 
-                <li class="panel ">
-                    <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#component-nav">
-                        <i class="icon-tasks"> </i> หมวดหมู่วัตถุ   
-                        <span class="pull-right">
-                          <i class="icon-angle-left"></i>
-                        </span>
-                    </a>
-                    <ul class="collapse" id="component-nav">
-                        <li class=""><a href="<?php echo base_url(); ?>ArtifactType"><i class="icon-angle-right"></i> ทั้งหมด </a></li>
-                        <?php 
-                            foreach ($menu2 as $mrow){
-                        ?>
-                         <li class=""><a href="<?php echo base_url(); ?>ArtifactType/type/<?php echo $mrow['artifact_type_id'];?>"><i class="icon-angle-right"></i> <?php echo $mrow['artifact_type_name'];?></a></li>
-                            <?php }?>
-                    </ul>
-                </li>
+                
                 <li class="panel">
                     <a href="<?php echo base_url(); ?>Material" >
                         <i class="icon-tasks"></i> ประเภทวัสดุ
@@ -69,11 +60,7 @@
                         <i class="icon-tasks"></i> หมวดหมู่วัตถุ
                     </a>                   
                 </li> -->
-                <li class="panel">
-                    <a href="<?php echo base_url(); ?>Artifact" >
-                        <i class="icon-tasks"></i> ข้อมูลโบราณวัตถุ
-                    </a>                   
-                </li>
+                
                 <li class="panel">
                     <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#location-nav">
                         <i class="icon-tasks"></i> อาคาร
@@ -96,6 +83,19 @@
                         <i class="icon-tasks"></i> ห้อง
                     </a>                   
                 </li>
+                <?php if($this->session->logged_in['permission']!=''){ ?>
+                <li class="panel">
+                    <a href="<?php echo base_url(); ?>Profile" >
+                        <i class="icon-tasks"></i> ข้อมูลส่วนตัว
+                    </a>                   
+                </li>   
+                <?php if($this->session->logged_in['permission']!='admin'){ ?>
+                <li class="panel">
+                    <a href="<?php echo base_url(); ?>Members" >
+                        <i class="icon-tasks"></i> ข้อมูลสมาชิก
+                    </a>                   
+                </li>   
+                <?php }?>
                 <li><a href="<?php echo base_url(); ?>Logout"><i class="icon-signin"></i> ออกจากระบบ </a></li>
                 <?php }else{ ?>                    
                 <li><a href="<?php echo base_url(); ?>Login"><i class="icon-signin"></i> เข้าสู่ระบบ </a></li>
