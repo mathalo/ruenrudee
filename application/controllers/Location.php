@@ -89,10 +89,10 @@ class Location extends My_controller {
 			}
 		}
 
-		$query = $this->db->get_where('location', array('location_id' => $id, 'status' => 'open'));
+		$query = $this->db->get_where('location', array('location_id' => $id));
 		$data['data'] = $query->result_array();
 
-		$query_menu = $this->db->get_where('location', array('parent_id' => 0));
+		$query_menu = $this->db->get_where('location', array('parent_id' => 0, 'status' => 'open'));
 		$data['data_location'] = $query_menu->result_array();
 
 		$this->load->view('template/head');
