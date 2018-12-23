@@ -241,7 +241,7 @@ class Artifact extends My_controller {
 		$query = $this->db->get_where('location', array('parent_id' => 0));
         $data['data_location'] = $query->result_array();
 
-        $query = $this->db->get('artifact_type');
+		$query = $this->db->get_where('artifact_type', array('status' => 'open'));
         $data['data_artifact_type'] = $query->result_array();
 		
 		$data['name'] = $this->session->logged_in['name'];
@@ -432,7 +432,7 @@ class Artifact extends My_controller {
 		}
 		$data['sub_data_location'] = $query->result_array();
 		
-        $query = $this->db->get('artifact_type');
+        $query = $this->db->get_where('artifact_type', array('status' => 'open'));
         $data['data_artifact_type'] = $query->result_array();
 		
 		$data['name'] = $this->session->logged_in['name'];
