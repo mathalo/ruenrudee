@@ -157,7 +157,7 @@
                         <div class="panel panel-default">
                             
                             <div class="panel-heading">
-                                ข้อมูล  จำนวนทั้งสิ้น <?php echo count($data); ?> เรคอร์ด
+                                ข้อมูล  จำนวนทั้งสิ้น <?php echo count($data); ?> รายการ
                             </div>
                             <div class="panel-body">
                                                 
