@@ -125,9 +125,10 @@ class Search extends My_controller {
 		$this->excel->getActiveSheet()->setCellValue('F1', 'หมวดหมู่วัตถุ:');
 		$this->excel->getActiveSheet()->setCellValue('G1', 'วัสดุ:');
 		$this->excel->getActiveSheet()->setCellValue('H1', 'รูปแบบศิลปะ:');
-		$this->excel->getActiveSheet()->setCellValue('I1', 'อาคาร:');
-		$this->excel->getActiveSheet()->setCellValue('J1', 'ห้อง:');
-		$this->excel->getActiveSheet()->setCellValue('K1', 'ฝีมือช่าง/designer:');
+		$this->excel->getActiveSheet()->setCellValue('I1', 'จำนวน:');
+		$this->excel->getActiveSheet()->setCellValue('J1', 'อาคาร:');
+		$this->excel->getActiveSheet()->setCellValue('K1', 'ห้อง:');
+		$this->excel->getActiveSheet()->setCellValue('L1', 'ฝีมือช่าง/designer:');
 
 		$row_start = 2;
 
@@ -155,7 +156,9 @@ class Search extends My_controller {
 				$this->excel->getActiveSheet()->setCellValue('F'.$row_start, $row['artifact_type']);
 				$this->excel->getActiveSheet()->setCellValue('G'.$row_start, $row['material']);
 				$this->excel->getActiveSheet()->setCellValue('H'.$row_start, $row['cat_name']);
-				$this->excel->getActiveSheet()->setCellValue('I'.$row_start, $row['location_name']);
+				$this->excel->getActiveSheet()->setCellValue('I'.$row_start, $row['quantity']);
+				
+				$this->excel->getActiveSheet()->setCellValue('J'.$row_start, $row['location_name']);
 
 				$query = $this->db->get_where('location', array('parent_id !=' => 0));
 				$data_sub_location = $query->result_array();
@@ -168,8 +171,8 @@ class Search extends My_controller {
 				}
 
 
-				$this->excel->getActiveSheet()->setCellValue('J'.$row_start, $room);
-				$this->excel->getActiveSheet()->setCellValue('K'.$row_start, $row['designer']);
+				$this->excel->getActiveSheet()->setCellValue('K'.$row_start, $room);
+				$this->excel->getActiveSheet()->setCellValue('L'.$row_start, $row['designer']);
 				$row_start++;
 			}
 		}
