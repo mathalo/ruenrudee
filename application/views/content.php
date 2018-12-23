@@ -157,7 +157,7 @@
                         <div class="panel panel-default">
                             
                             <div class="panel-heading">
-                                ข้อมูล   
+                                ข้อมูล  <?php echo count($data);?>
                             </div>
                             <div class="panel-body">
                                                 
@@ -176,7 +176,7 @@
                                                 <th>อาคาร</th>
                                                 <th>ห้อง</th>
                                                 <!-- <th>อายุสมัย</th> -->
-                                                <th>ฝีมือช่าง/designer</th>
+                                                <th>จำนวน</th>
                                                 <th  id="non-printable">#</th>
                                             </tr>
                                         </thead>
@@ -208,7 +208,7 @@
                                                 ?>
                                                 <td><?php echo $room ;?></td>
                                                 <!-- <td><?=$row['history']?></td> -->
-                                                <td><?=$row['designer']?></td>
+                                                <td><?=$row['quantity']?></td>
                                                 <td  id="non-printable">
                                                     <a onclick="window.location='<?php echo base_url(); ?>search/detail/<?=$row['artifact_id']?>'">
                                                         <button class="btn btn-primary"><i class="icon-search icon-white"></i> ดูรายละเอียด</button>
