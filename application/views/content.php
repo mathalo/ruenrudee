@@ -85,7 +85,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>อาคาร</label>
-                                            <select name="location" id="location" class="validate[required] form-control" onchange="selectlocation(this.value);">
+                                            <select name="location_id" id="location_id" class="validate[required] form-control" onchange="selectlocation(this.value);">
                                                 <option value="0">เลือกอาคาร</option>
                                             <?php 
                                             foreach ($data_location  as $row2){
@@ -118,8 +118,8 @@
                                         <div class="form-group">
                                             <label>ห้อง</label>
                                             <select name="sub_location" id="sub_location" class="validate[required] form-control">
-                                                <option value="0">เลือกห้อง</option>
-                                            
+                                                <option value="0">- ไม่มีข้อมูล -</option>
+                                                
                                             </select>
                                         </div>
                                         <!-- <div class="form-group">
