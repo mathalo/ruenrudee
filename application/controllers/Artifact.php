@@ -62,6 +62,7 @@ class Artifact extends My_controller {
 	public function index()
 	{
 		// $query = $this->db->get_where('artifact', array('status' => 'open'));
+		$this->db->order_by("artifact_no", "asc");
 		$query = $this->db->get('artifact');
 		$data['data'] = $query->result_array();
 
