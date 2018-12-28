@@ -64,17 +64,10 @@
                                          </div>
                                      </div>
                                     <div class="form-group">
-                                         <label class="control-label col-lg-4">เลขประจำวัตถุ</label>
+                                         <label class="control-label col-lg-4">เลขวัตถุ</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="artifact_code" name="artifact_code" value="<?php echo set_value('artifact_code'); ?>"class="form-control" />
                                              <?php echo form_error('artifact_code', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
-                                         </div>
-                                     </div>
-                                     <div class="form-group">
-                                         <label class="control-label col-lg-4">เลขเดิม</label>
-                                         <div class="col-lg-4">
-                                             <input type="text" id="old_number" name="old_number" value="<?php echo set_value('old_number'); ?>"class="form-control" />
-                                             <?php echo form_error('old_number', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
                                          </div>
                                      </div>
                                     <div class="form-group">
@@ -85,7 +78,14 @@
                                          </div>
                                      </div>
                                      <div class="form-group">
-                                        <label class="control-label col-lg-4">หมวดหมู่วัตถุ</label>
+                                         <label class="control-label col-lg-4">เลขเดิม</label>
+                                         <div class="col-lg-4">
+                                             <input type="text" id="old_number" name="old_number" value="<?php echo set_value('old_number'); ?>"class="form-control" />
+                                             <?php echo form_error('old_number', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
+                                         </div>
+                                     </div>
+                                     <div class="form-group">
+                                        <label class="control-label col-lg-4">หมวดหมู่</label>
                                     
                                         <div class="col-lg-8">
                                             <select name="artifact_type[]" id="artifact_type[]" data-placeholder="เลือกหมวดหมู่วัตถุ" multiple class="form-control chzn-select  chzn-rtl" style="width: 350px; height:15px;">
@@ -112,7 +112,14 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-lg-4">รูปแบบศิลปะ</label>
+                                         <label class="control-label col-lg-4">ขนาด (เซนติเมตร)</label>
+                                         <div class="col-lg-4">
+                                             <input type="text" id="dimension_a" name="dimension_a" value="<?php echo set_value('dimension_a'); ?>"class="form-control" />
+                                             <?php echo form_error('dimension_a', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
+                                         </div>
+                                     </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-4">แบบศิลปะ</label>
                                         <div class="col-lg-4">
                                             <select name="cat_id" id="cat_id" class="validate[required] form-control">
                                                 <option value="0">เลือกรูปแบบศิลปะ</option>
@@ -125,13 +132,6 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                         <label class="control-label col-lg-4">จำนวน</label>
-                                         <div class="col-lg-4">
-                                             <input type="text" id="quantity" name="quantity" value="0"class="form-control" />
-                                             
-                                         </div>
-                                     </div>
-                                    <div class="form-group">
                                          <label class="control-label col-lg-4">อายุสมัย</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="period" name="period" value="<?php echo set_value('period'); ?>"class="form-control" />
@@ -139,28 +139,7 @@
                                          </div>
                                      </div>
                                      <div class="form-group">
-                                         <label class="control-label col-lg-4">ขนาด</label>
-                                         <div class="col-lg-4">
-                                             <input type="text" id="dimension_a" name="dimension_a" value="<?php echo set_value('dimension_a'); ?>"class="form-control" />
-                                             <?php echo form_error('dimension_a', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
-                                         </div>
-                                     </div>
-                                     <!-- <div class="form-group">
-                                         <label class="control-label col-lg-4">ขนาด (b)</label>
-                                         <div class="col-lg-4">
-                                             <input type="text" id="dimension_b" name="dimension_b" value="<?php echo set_value('dimension_b'); ?>"class="form-control" />
-                                             <?php echo form_error('dimension_b', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
-                                         </div>
-                                     </div> -->
-                                     
-                                    <div class="form-group">
-                                        <label class="control-label col-lg-4" >คำอธิบายลักษณะ</label>
-                                        <div class="col-lg-4">
-                                        <textarea class="form-control" rows="3" id="description" name="description"><?php echo set_value('description'); ?></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                         <label class="control-label col-lg-4">ฝีมือช่าง/designer</label>
+                                         <label class="control-label col-lg-4">ฝีมือช่าง</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="designer" name="designer" value="<?php echo set_value('designer'); ?>"class="form-control" />
                                              <?php echo form_error('designer', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
@@ -172,14 +151,27 @@
                                         <textarea class="form-control" rows="3" id="history" name="history"><?php echo set_value('history'); ?></textarea>
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-4" >ลักษณะ</label>
+                                        <div class="col-lg-4">
+                                        <textarea class="form-control" rows="3" id="description" name="description"><?php echo set_value('description'); ?></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                         <label class="control-label col-lg-4">จำนวน</label>
+                                         <div class="col-lg-4">
+                                             <input type="text" id="quantity" name="quantity" value="0"class="form-control" />
+                                             
+                                         </div>
+                                     </div>
                                      <div class="form-group">
-                                        <label class="control-label col-lg-4" >condition</label>
+                                        <label class="control-label col-lg-4" >สภาพ</label>
                                         <div class="col-lg-4">
                                         <textarea class="form-control" rows="3" id="condition" name="condition"><?php echo set_value('condition'); ?></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-lg-4">อาคาร</label>
+                                        <label class="control-label col-lg-4">สถานที่จัดเก็บ อาคาร</label>
                                         <div class="col-lg-4">
                                             <select name="location_id" id="location_id" class="validate[required] form-control" onchange="selectlocation(this.value);">
                                                 <option value="0">เลือกอาคาร</option>
@@ -213,7 +205,7 @@
                                             }
                                         </script>
                                     <div class="form-group">
-                                        <label class="control-label col-lg-4">ห้อง</label>
+                                        <label class="control-label col-lg-4">ห้องจัดเก็บ</label>
                                         <div class="col-lg-4">
                                         <select name="sub_location" id="sub_location" class="validate[required] form-control">
                                             <option value="0">- ไม่มีข้อมูล -</option>
@@ -229,40 +221,42 @@
                                          </div>
                                      </div>
                                      <div class="form-group">
-                                         <label class="control-label col-lg-4">tag_location</label>
-                                         <div class="col-lg-4">
-                                             <input type="text" id="tag_location" name="tag_location" value="<?php echo set_value('tag_location'); ?>"class="form-control" />
-                                             <?php echo form_error('tag_location', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
-                                         </div>
-                                     </div>
-                                     <div class="form-group">
-                                         <label class="control-label col-lg-4">revised</label>
+                                        <label class="control-label col-lg-4" >การนำไปใช้</label>
+                                        <div class="col-lg-4">
+                                        <textarea class="form-control" rows="3" id="implement" name="implement"><?php echo set_value('implement'); ?></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                         <label class="control-label col-lg-4">การซ่อมสงวนรักษา</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="revised" name="revised" value="<?php echo set_value('revised'); ?>"class="form-control" />
                                              <?php echo form_error('revised', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
                                          </div>
                                      </div>
                                      <div class="form-group">
-                                        <label class="control-label col-lg-4" >conservation</label>
+                                         <label class="control-label col-lg-4">Tag location</label>
+                                         <div class="col-lg-4">
+                                             <input type="text" id="tag_location" name="tag_location" value="<?php echo set_value('tag_location'); ?>"class="form-control" />
+                                             <?php echo form_error('tag_location', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
+                                         </div>
+                                     </div>
+                                    
+                                     <div class="form-group">
+                                        <label class="control-label col-lg-4" >การอนุรักษ์</label>
                                         <div class="col-lg-4">
                                         <textarea class="form-control" rows="3" id="conservation" name="conservation"><?php echo set_value('conservation'); ?></textarea>
                                         </div>
                                     </div>
                                      <div class="form-group">
-                                        <label for="tags" class="control-label col-lg-4">Clean</label>
+                                        <label for="tags" class="control-label col-lg-4">การทำความสะอาด</label>
                                         <div class="col-lg-8">
                                             <input name="clean[]" id="tags" value="" class="form-control" />
                                         </div>
                                     </div>
                                     
-                                    <div class="form-group">
-                                        <label class="control-label col-lg-4" >implement</label>
-                                        <div class="col-lg-4">
-                                        <textarea class="form-control" rows="3" id="implement" name="implement"><?php echo set_value('implement'); ?></textarea>
-                                        </div>
-                                    </div>
+                                    
                                      <div class="form-group">
-                                         <label class="control-label col-lg-4">condition report by</label>
+                                         <label class="control-label col-lg-4">การบันทึกสภาพวัตถุ</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="condition_report_by" name="condition_report_by" value="<?php echo set_value('condition_report_by'); ?>"class="form-control" />
                                              <?php echo form_error('condition_report_by', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
@@ -270,7 +264,7 @@
                                      </div>
                                     
                                      <div class="form-group">
-                                        <label class="control-label col-lg-4" >note</label>
+                                        <label class="control-label col-lg-4" >หมายเหตุ</label>
                                         <div class="col-lg-4">
                                         <textarea class="form-control" rows="3" id="note" name="note"><?php echo set_value('note'); ?></textarea>
                                         </div>

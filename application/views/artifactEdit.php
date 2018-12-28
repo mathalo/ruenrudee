@@ -185,7 +185,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-lg-4">อาคาร</label>
+                                        <label class="control-label col-lg-4">สถานที่จัดเก็บ อาคาร</label>
                                         <div class="col-lg-4">
                                             <select name="location_id" id="location_id" class="validate[required] form-control" onchange="selectlocation(this.value);">
                                                 <option value="0">เลือกอาคาร</option>
@@ -219,7 +219,7 @@
                                             }
                                         </script>
                                     <div class="form-group">
-                                        <label class="control-label col-lg-4">ห้อง</label>
+                                        <label class="control-label col-lg-4">ห้องจัดเก็บ</label>
                                         <div class="col-lg-4">
                                         <select name="sub_location" id="sub_location" class="validate[required] form-control">
                                             
@@ -247,6 +247,13 @@
                                         <textarea class="form-control" rows="3" id="implement" name="implement"><?=$row['implement']?></textarea>
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                         <label class="control-label col-lg-4">การซ่อมสงวนรักษา</label>
+                                         <div class="col-lg-4">
+                                             <input type="text" id="revised" name="revised" value="<?=$row['revised']?>"class="form-control" />
+                                             <?php echo form_error('revised', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
+                                         </div>
+                                     </div>
                                      <div class="form-group">
                                          <label class="control-label col-lg-4">Tag location</label>
                                          <div class="col-lg-4">
@@ -254,26 +261,14 @@
                                              <?php echo form_error('tag_location', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
                                          </div>
                                      </div>
-
-
-
-
-
                                      <div class="form-group">
-                                         <label class="control-label col-lg-4">revised</label>
-                                         <div class="col-lg-4">
-                                             <input type="text" id="revised" name="revised" value="<?=$row['revised']?>"class="form-control" />
-                                             <?php echo form_error('revised', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
-                                         </div>
-                                     </div>
-                                     <div class="form-group">
-                                        <label class="control-label col-lg-4" >conservation</label>
+                                        <label class="control-label col-lg-4" >การอนุรักษ์</label>
                                         <div class="col-lg-4">
                                         <textarea class="form-control" rows="3" id="conservation" name="conservation"><?=$row['conservation']?></textarea>
                                         </div>
                                     </div>
                                      <div class="form-group">
-                                        <label for="tags" class="control-label col-lg-4">Clean</label>
+                                        <label for="tags" class="control-label col-lg-4">การทำความสะอาด</label>
                                         <div class="col-lg-8">
                                             <input name="clean[]" id="tags" value="<?=$row['clean']?>" class="form-control" />
                                         </div>
@@ -281,7 +276,7 @@
                                     
                                     
                                      <div class="form-group">
-                                         <label class="control-label col-lg-4">condition report by</label>
+                                         <label class="control-label col-lg-4">การบันทึกสภาพวัตถุ</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="condition_report_by" name="condition_report_by" value="<?=$row['condition_report_by']?>"class="form-control" />
                                              <?php echo form_error('condition_report_by', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
