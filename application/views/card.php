@@ -91,8 +91,15 @@ th, td {
                                                             <?php echo $row['artifact_name']; ?>
                                                         </td>
                                                     </tr>
+                                                    
                                                 </thead>
                                                 <tbody>
+                                                    <tr>
+                                                        <td colspan="5">
+                                                            <label class="control-label">ชื่อวัตถุ :  </label>
+                                                            <?php echo $row['artifact_name']; ?>
+                                                        </td>
+                                                    </tr>
                                                     <tr>
                                                         <td align="right"  colspan="5"><label class="control-label">ลักษณะ :&nbsp;</label><p><?php echo $row['description']; ?></p></td>
                                                     </tr>
