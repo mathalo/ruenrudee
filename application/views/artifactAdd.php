@@ -5,7 +5,7 @@
              <div class="inner">  
                  <div class="row">
                  <div class="col-lg-12">
-                <h1 > เพิ่มข้อมูลวัตถุ ศิลปวัตถุ </h1> 
+                <h1 > เพิ่มข้อมูลวัตถุ ศิลปวัตถุ1111 </h1> 
                 </div> 
                 </div>
                 <hr />
