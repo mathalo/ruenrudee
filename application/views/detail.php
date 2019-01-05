@@ -266,7 +266,7 @@ tbody tr:hover{
                                                     <tr>
                                                         <td align="right" valign="top"  ><label class="control-label">การอนุรักษ์ :&nbsp;</label></td>
                                                         <td><textarea class="form-control" rows="5" id="conservation" name="conservation"><?=$row['conservation']?></textarea></td>
-                                                    </tr>
+                                                    </tr> 
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">การทำความสะอาด :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['clean']; ?></label></td>
