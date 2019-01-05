@@ -163,19 +163,19 @@ tbody tr:hover{
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['artifact_no']; ?></label></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">เลขประจำวัตถุ :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">เลขวัตถุ :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['artifact_code']; ?></label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="right"  ><label class="control-label">เลขเดิม :&nbsp;</label></td>
-                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['old_number']; ?></label></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">ชื่อวัตถุ :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['artifact_name']; ?></label></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">หมวดหมู่วัตถุ :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">เลขเดิม :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['old_number']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">หมวดหมู่ :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['artifact_type']; ?></label></td>
                                                     </tr>
                                                     <tr>
@@ -183,7 +183,11 @@ tbody tr:hover{
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['material']; ?></label></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">รูปแบบศิลปะ :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">ขนาด :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['dimension_a']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">แบบศิลปะ :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;
                                                             <?php 
                                                             foreach ($data_category  as $row2){
@@ -193,24 +197,13 @@ tbody tr:hover{
                                                             }?>
                                                         </label></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td align="right"  ><label class="control-label">จำนวน :&nbsp;</label></td>
-                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['quantity']; ?></label></td>
-                                                    </tr>
+                                                    
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">อายุสมัย :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['period']; ?></label></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">ขนาด :&nbsp;</label></td>
-                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['dimension_a']; ?></label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="right"  ><label class="control-label">คำอธิบายลักษณะ :&nbsp;</label></td>
-                                                        <td><textarea class="form-control" rows="10" id="description" name="description"><?=$row['description']?></textarea></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="right"  ><label class="control-label">ฝีมือช่าง/designer :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">ฝีมือช่าง :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['designer']; ?></label></td>
                                                     </tr>
                                                     <tr>
@@ -218,11 +211,19 @@ tbody tr:hover{
                                                         <td><textarea class="form-control" rows="5" id="history" name="history"><?=$row['history']?></textarea></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right" valign="top"  ><label class="control-label">condition :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">ลักษณะ :&nbsp;</label></td>
+                                                        <td><textarea class="form-control" rows="10" id="description" name="description"><?=$row['description']?></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">จำนวน :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['quantity']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right" valign="top"  ><label class="control-label">สภาพ :&nbsp;</label></td>
                                                         <td><textarea class="form-control" rows="5" id="condition" name="condition"><?=$row['condition_']?></textarea></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">อาคาร :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">สถานที่จัดเก็บ อาคาร :&nbsp;</label></td>
                                                         <td>
                                                         <label class="control-label">&nbsp;&nbsp;&nbsp;
                                                         <?php 
@@ -234,7 +235,7 @@ tbody tr:hover{
                                                         </label></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">ห้อง :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">ห้องจัดเก็บ :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;
                                                         <?php 
                                                         foreach ($data_location  as $row2){
@@ -248,36 +249,39 @@ tbody tr:hover{
                                                         <td align="right"  ><label class="control-label">ตู้/ชั้น :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['other_location']; ?></label></td>
                                                     </tr>
+
+                                                    
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">tag location :&nbsp;</label></td>
-                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['tag_location']; ?></label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="right"  ><label class="control-label">revised :&nbsp;</label></td>
-                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['revised']; ?></label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="right" valign="top"  ><label class="control-label">conservation :&nbsp;</label></td>
-                                                        <td><textarea class="form-control" rows="5" id="conservation" name="conservation"><?=$row['conservation']?></textarea></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="right"  ><label class="control-label">Clean :&nbsp;</label></td>
-                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['clean']; ?></label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="right"  ><label class="control-label">Implement :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">การนำไปใช้ :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['implement']; ?></label></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">condition report by :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">การซ่อมสงวนรักษา :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['revised']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">Tag location :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['tag_location']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right" valign="top"  ><label class="control-label">การอนุรักษ์ :&nbsp;</label></td>
+                                                        <td><textarea class="form-control" rows="5" id="conservation" name="conservation"><?=$row['conservation']?></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">การทำความสะอาด :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['clean']; ?></label></td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">การบันทึกสภาพวัตถุ :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['condition_report_by']; ?></label></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right" valign="top" ><label class="control-label">Note :&nbsp;</label></td>
+                                                        <td align="right" valign="top" ><label class="control-label">หมายเหตุ :&nbsp;</label></td>
                                                         <td><textarea class="form-control" rows="5" id="note" name="note"><?=$row['note']?></textarea></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right" valign="top" ><label class="control-label">gallery :&nbsp;</label></td>
+                                                        <td align="right" valign="top" ><label class="control-label">แกลลอรี่ :&nbsp;</label></td>
                                                         <td><br>
                                                             <ul id="gallery" class="pure-js-lightbox-container">
                                                                 <?php
