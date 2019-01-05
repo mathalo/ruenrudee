@@ -285,7 +285,7 @@ tbody tr:hover{
                                                         <td><br>
                                                             <ul id="gallery" class="pure-js-lightbox-container">
                                                                 <?php
-
+                                                                echo $_SERVER["DOCUMENT_ROOT"]; exit;
                                                                 $allfiles = dirlist($_SERVER["DOCUMENT_ROOT"]."/ruenrudee/uploads/artifact/gallery/".$data_id, "files");
                                                                 
                                                                 if($allfiles!=0){
