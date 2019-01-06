@@ -177,7 +177,8 @@ th, td {
                                                                 echo $row2['location_name']; 
                                                             } 
                                                         }?>
-                                                        &nbsp;ตู้&nbsp;<?=$row['other_location']?>
+                                                        &nbsp;
+                                                        <label class="control-label">ตู้&nbsp;</label><?=$row['other_location']?>
                                                      </td>
                                                 </tr>
                                                 <tr>
