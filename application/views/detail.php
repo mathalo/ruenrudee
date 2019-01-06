@@ -286,7 +286,7 @@ tbody tr:hover{
                                                             <ul id="gallery" class="pure-js-lightbox-container">
                                                                 <?php
                                                                 
-                                                                $allfiles = scandir($_SERVER["DOCUMENT_ROOT"]."/uploads/artifact/gallery/".$data_id);
+                                                                $allfiles = dirlist($_SERVER["DOCUMENT_ROOT"]."/uploads/artifact/gallery/".$data_id, "files");
                                                                 
                                                                 if($allfiles!=0){
                                                                     for($i=0;$i<count($allfiles);$i++){
