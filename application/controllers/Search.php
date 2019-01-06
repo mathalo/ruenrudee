@@ -224,7 +224,7 @@ class Search extends My_controller {
         $data['data_artifact_type'] = $query->result_array();
 		
 		$data['name'] = $this->session->logged_in['name'];
-		// $this->load->view('detail', $data);
+		$this->load->view('detail', $data);
 
 		$this->load->view('template/footer');
 
