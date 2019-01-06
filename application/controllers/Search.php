@@ -212,19 +212,19 @@ class Search extends My_controller {
 		$query = $this->db->get('location');
         $data['data_location'] = $query->result_array();
 		
-		if($data['data'][0]['location_id']==0){
-			// echo $data['data'][0]['location_id']; exit;
-			$query = $this->db->get_where('location', array('parent_id' => '9999'));
-		}else{
-			$query = $this->db->get_where('location', array('parent_id' => $data['data'][0]['location_id']));
-		}
-		$data['sub_data_location'] = $query->result_array();
+		// if($data['data'][0]['location_id']==0){
+		// 	// echo $data['data'][0]['location_id']; exit;
+		// 	$query = $this->db->get_where('location', array('parent_id' => '9999'));
+		// }else{
+		// 	$query = $this->db->get_where('location', array('parent_id' => $data['data'][0]['location_id']));
+		// }
+		// $data['sub_data_location'] = $query->result_array();
 		
         $query = $this->db->get('artifact_type');
         $data['data_artifact_type'] = $query->result_array();
 		
 		$data['name'] = $this->session->logged_in['name'];
-		$this->load->view('detail', $data);
+		// $this->load->view('detail', $data);
 
 		$this->load->view('template/footer');
 
