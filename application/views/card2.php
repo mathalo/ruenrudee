@@ -177,6 +177,7 @@ th, td {
                                                                 echo $row2['location_name']; 
                                                             } 
                                                         }?>
+                                                        &nbsp;ตู้&nbsp;<?=$row['other_location']?>
                                                      </td>
                                                 </tr>
                                                 <tr>
