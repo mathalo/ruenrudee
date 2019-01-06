@@ -86,7 +86,7 @@ th, td {
                                             <table width="auto" id="printTable">
                                                
                                                 <tr>
-                                                    <td colspan="5">
+                                                    <td>
                                                         <label class="control-label">เลขวัตถุ :  </label>
                                                         <?php echo $row['artifact_code']; ?>
                                                     </td>
@@ -122,7 +122,7 @@ th, td {
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="5">
+                                                    <td>
                                                         <label class="control-label">ชื่อวัตถุ :  </label>
                                                         <?php echo $row['artifact_name']; ?>
                                                     </td>
