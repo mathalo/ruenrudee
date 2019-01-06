@@ -291,7 +291,7 @@ tbody tr:hover{
                                                                 if($allfiles!=0){
                                                                 for($i=0;$i<count($allfiles);$i++){
                                                                 ?>
-                                                                <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
+                                                                <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"><img width="200" height="200" src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
                                                                 <?php }}?>
                                                             </ul>
                                                         </td>
