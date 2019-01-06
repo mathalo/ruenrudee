@@ -42,6 +42,8 @@ application/logs/*
 
 ###OSX###
 
+
+
 .DS_Store
 .AppleDouble
 .LSOverride
