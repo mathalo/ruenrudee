@@ -295,7 +295,7 @@ tbody tr:hover{
                                                                     <?php 
                                                                     }
                                                                 }else{
-                                                                    print "1234444";
+                                                                    print $_SERVER["DOCUMENT_ROOT"]."/ruenrudee/uploads/artifact/gallery/";
                                                                 }
                                                                 ?>
                                                             </ul>
