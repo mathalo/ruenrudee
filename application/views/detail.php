@@ -281,7 +281,7 @@ tbody tr:hover{
                                                         <td><textarea class="form-control" rows="5" id="note" name="note"><?=$row['note']?></textarea></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right" valign="top" ><label class="control-label"><?=$_SERVER["DOCUMENT_ROOT"];?> แกลลอรี่ :&nbsp;</label></td>
+                                                        <td align="right" valign="top" ><label class="control-label"> แกลลอรี่ :&nbsp;</label></td>
                                                         <td><br>
                                                             <ul id="gallery" class="pure-js-lightbox-container">
                                                                 <?php
@@ -289,10 +289,15 @@ tbody tr:hover{
                                                                 $allfiles = dirlist($_SERVER["DOCUMENT_ROOT"]."/ruenrudee/uploads/artifact/gallery/".$data_id, "files");
                                                                 
                                                                 if($allfiles!=0){
-                                                                for($i=0;$i<count($allfiles);$i++){
+                                                                    for($i=0;$i<count($allfiles);$i++){
+                                                                    ?>
+                                                                    <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
+                                                                    <?php 
+                                                                    }
+                                                                }else{
+                                                                    print "1234444";
+                                                                }
                                                                 ?>
-                                                                <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
-                                                                <?php }}?>
                                                             </ul>
                                                         </td>
                                                     </tr>
