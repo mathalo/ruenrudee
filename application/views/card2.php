@@ -155,24 +155,37 @@ th, td {
                                                 <tr>
                                                     <td align="right"  colspan="2"><label class="control-label">ลักษณะ :&nbsp;</label><p><?php echo $row['description']; ?></p></td>
                                                 </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                
-                                                
+                                                <tr>
+                                                    <td><label class="control-label">จำนวน :&nbsp;</label><?php echo $row['quantity']; ?></td>
+                                                    <td><label class="control-label">สภาพ :&nbsp;</label><?php echo $row['condition_']; ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label class="control-label">สถานที่เก็บ: <br>
+                                                        อาคาร&nbsp;</label>
+                                                            <?php 
+                                                            foreach ($data_location  as $row2){
+                                                                if($row2['location_id']==$row['location_id']){ 
+                                                                    echo $row2['location_name']; 
+                                                                } 
+                                                            }?>
+                                                    </td>
+                                                    <td>
+                                                        <label class="control-label">ห้อง&nbsp;</label>
+                                                        <?php 
+                                                        foreach ($data_location  as $row2){
+                                                            if($row2['location_id']==$row['sub_location_id']){ 
+                                                                echo $row2['location_name']; 
+                                                            } 
+                                                        }?>
+                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td align="right"  ><label class="control-label">Tag location :&nbsp;</label><?php echo $row['tag_location']; ?></td>
+                                                </tr>
                                                 <tr id="non-printable">
-                                                    <td colspan="3">
+                                                    <td colspan="2">
                                                         <div>
                                                             <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
                                                             <button  type="button" id="print_table" class="btn btn-primary ForMargin" onclick="window.print();" >สั่งพิมพ์</button>
