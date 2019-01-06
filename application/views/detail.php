@@ -128,7 +128,36 @@ tbody tr:hover{
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    
+                                                    <tr>
+                                                        <td align="right" valign="top" width="20%"><label class="control-label">รูปภาพ :&nbsp;</label></td>
+                                                        <td>
+                                                            <div  class="fileupload fileupload-new" data-provides="fileupload">
+                                                                <br>
+                                                                <div id="fileupload" class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+                                                                <div>
+                                                                    <!-- <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" name="filename"/></span>
+                                                                    <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a> -->
+
+                                                                    <input type="hidden" id="fullpathimage" name="fullpathimage"  value="<?php echo base_url(); ?>uploads/artifact/<?php echo $row['image']; ?>">
+                                                                    <input type="hidden" id="old_filename" name="old_filename"  value="<?php echo $row['image']; ?>">
+                                                                    <script>
+                                                                        var img = document.createElement('IMG');
+
+                                                                        var fullpathimage = document.getElementById('fullpathimage').value;
+                                                                        var old_filename = document.getElementById('old_filename').value;
+                                                                        
+                                                                        img.setAttribute('src', '<?php echo base_url(); ?>uploads/artifact/'+old_filename);
+                                                                        if(old_filename==''){ 
+                                                                            img.setAttribute('src', '<?php echo base_url(); ?>uploads/artifact/default.png'); 
+                                                                        }
+                                                                        img.setAttribute('class', 'mark');
+
+                                                                        document.getElementById("fileupload").appendChild(img);
+                                                                    </script>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">เลขลำดับ :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['artifact_no']; ?></label></td>
@@ -251,7 +280,7 @@ tbody tr:hover{
                                                         <td align="right" valign="top" ><label class="control-label">หมายเหตุ :&nbsp;</label></td>
                                                         <td><textarea class="form-control" rows="5" id="note" name="note"><?=$row['note']?></textarea></td>
                                                     </tr>
-                                                    <tr>
+                                                    <!-- <tr>
                                                         <td align="right" valign="top" ><label class="control-label">แกลลอรี่ :&nbsp;</label></td>
                                                         <td><br>
                                                             <ul id="gallery" class="pure-js-lightbox-container">
@@ -262,11 +291,11 @@ tbody tr:hover{
                                                                 if($allfiles!=0){
                                                                 for($i=0;$i<count($allfiles);$i++){
                                                                 ?>
-                                                                <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"><img width="250" height="300" src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
+                                                                <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
                                                                 <?php }}?>
                                                             </ul>
                                                         </td>
-                                                    </tr>
+                                                    </tr> -->
                                                     <!-- <tr>
                                                         <td align="right" valign="top" ></td>
                                                         <td align="right" valign="top" >

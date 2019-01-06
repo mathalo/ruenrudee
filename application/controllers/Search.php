@@ -193,15 +193,15 @@ class Search extends My_controller {
 	public function detail($id)
 	{
 
+		$this->load->view('template/head.php');
+		$this->load->view('template/header.php');
+		
+		$this->menu();
+
 		$data['data_id'] = $id;
 
 		$query = $this->db->get_where('artifact', array('artifact_id' => $id));
 		$data['data'] = $query->result_array();
-
-		$this->load->view('template/head');
-		$this->load->view('template/header');
-		
-		$this->menu();
 
 		$query = $this->db->get('category');
 		$data['data_category'] = $query->result_array();
