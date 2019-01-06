@@ -304,7 +304,7 @@ tbody tr:hover{
                                                             <button  type="button" id="example-10" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>search/'">ย้อนกลับ</button>
                                                         </td>
                                                     </tr> -->
-                                                </tbody>
+                                                </tbody> 
                                             </table>
                                          </div>
                                      </div>
