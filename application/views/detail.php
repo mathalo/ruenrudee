@@ -251,7 +251,51 @@ tbody tr:hover{
                                                     </tr>
 
                                                     
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">การนำไปใช้ :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['implement']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">การซ่อมสงวนรักษา :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['revised']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">Tag location :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['tag_location']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right" valign="top"  ><label class="control-label">การอนุรักษ์ :&nbsp;</label></td>
+                                                        <td><textarea class="form-control" rows="5" id="conservation" name="conservation"><?=$row['conservation']?></textarea></td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">การทำความสะอาด :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['clean']; ?></label></td>
+                                                    </tr>
                                                     
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">การบันทึกสภาพวัตถุ :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['condition_report_by']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right" valign="top" ><label class="control-label">หมายเหตุ :&nbsp;</label></td>
+                                                        <td><textarea class="form-control" rows="5" id="note" name="note"><?=$row['note']?></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right" valign="top" ><label class="control-label">แกลลอรี่ :&nbsp;</label></td>
+                                                        <td><br>
+                                                            <ul id="gallery" class="pure-js-lightbox-container">
+                                                                <?php
+                                                                $_SERVER["DOCUMENT_ROOT"];
+                                                                $allfiles = dirlist($_SERVER["DOCUMENT_ROOT"]."/ruenrudee/uploads/artifact/gallery/".$data_id, "files");
+                                                                
+                                                                if($allfiles!=0){
+                                                                for($i=0;$i<count($allfiles);$i++){
+                                                                ?>
+                                                                <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
+                                                                <?php }}?>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
                                                     <!-- <tr>
                                                         <td align="right" valign="top" ></td>
                                                         <td align="right" valign="top" >
