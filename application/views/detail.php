@@ -280,22 +280,7 @@ tbody tr:hover{
                                                         <td align="right" valign="top" ><label class="control-label">หมายเหตุ :&nbsp;</label></td>
                                                         <td><textarea class="form-control" rows="5" id="note" name="note"><?=$row['note']?></textarea></td>
                                                     </tr>
-                                                    <tr>
-                                                        <td align="right" valign="top" ><label class="control-label">แกลลอรี่ :&nbsp;</label></td>
-                                                        <td><br>
-                                                            <ul id="gallery" class="pure-js-lightbox-container">
-                                                                <?php
-                                                                echo $_SERVER["DOCUMENT_ROOT"]; exit;
-                                                                $allfiles = dirlist($_SERVER["DOCUMENT_ROOT"]."/ruenrudee/uploads/artifact/gallery/".$data_id, "files");
-                                                                
-                                                                if($allfiles!=0){
-                                                                for($i=0;$i<count($allfiles);$i++){
-                                                                ?>
-                                                                <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"><img width="200" height="200" src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
-                                                                <?php }}?>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
+                                                    
                                                     <!-- <tr>
                                                         <td align="right" valign="top" ></td>
                                                         <td align="right" valign="top" >
