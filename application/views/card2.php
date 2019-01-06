@@ -161,8 +161,7 @@ th, td {
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <label class="control-label">สถานที่เก็บ: <br>
-                                                        อาคาร&nbsp;</label>
+                                                        <label class="control-label">สถานที่เก็บ&nbsp;อาคาร&nbsp;</label>
                                                             <?php 
                                                             foreach ($data_location  as $row2){
                                                                 if($row2['location_id']==$row['location_id']){ 
@@ -181,8 +180,8 @@ th, td {
                                                      </td>
                                                 </tr>
                                                 <tr>
-                                                    
                                                     <td align="right"  ><label class="control-label">Tag location :&nbsp;</label><?php echo $row['tag_location']; ?></td>
+                                                    <td align="right" valign="top" ><label class="control-label">หมายเหตุ :&nbsp;</label><?=$row['note']?></td>
                                                 </tr>
                                                 <tr id="non-printable">
                                                     <td colspan="2">
