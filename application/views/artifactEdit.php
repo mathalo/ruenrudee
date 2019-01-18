@@ -105,7 +105,20 @@
                                             <?php 
                                             foreach ($data_artifact_type as $row2){
                                             ?>
-                                                <option value="<?=$row2['artifact_type_name']?>" <?php if(strpos($row['artifact_type'], $row2['artifact_type_name']) !== false){ echo "selected"; } ?> ><?=$row2['artifact_type_name']?></option>
+                                                <option value="<?=$row2['artifact_type_name']?>" 
+                                                <?php 
+                                                $arrAtType = explode(',', $row['artifact_type']);
+                                                $countType = count($arrAtType);
+                                                for($i=0;$i<$countType;$i++){
+                                                    // if(strpos($row['artifact_type'], $row2['artifact_type_name']) !== false){ 
+                                                    if($arrAtType[$i] == $row2['artifact_type_name']){ 
+                                                        echo "selected"; 
+                                                    } 
+                                                }
+                                                ?> 
+                                                >
+                                                    <?=$row2['artifact_type_name']?>
+                                                </option>
                                             <?php }?>
                                             </select>
                                         </div>
