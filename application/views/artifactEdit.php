@@ -119,7 +119,20 @@
                                             <?php  
                                             foreach ($data_material as $row2){
                                             ?>
-                                                <option value="<?=$row2['material_name']?>" <?php if(strpos($row2['material_name'], $row['material']) !== false){ echo "selected"; } ?> ><?=$row2['material_name']?></option>
+                                                <option value="<?=$row2['material_name']?>" 
+                                                <?php 
+                                                $arrMat = explode(',', $row['material']);
+                                                $countMat = count($arrMat);
+                                                for($i=0;$i<$countMat;$i++){
+                                                    //if(strpos($row['material'], $row2['material_name']) !== false){ 
+                                                    if($arrMat[$i] == $row2['material_name']){ 
+                                                        echo "selected"; 
+                                                    } 
+                                                }
+                                                ?> 
+                                                >
+                                                <?=$row2['material_name']?>
+                                                </option>
                                             <?php }?>
                                             </select>
                                         </div>
