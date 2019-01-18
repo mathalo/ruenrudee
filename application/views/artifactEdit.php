@@ -117,6 +117,7 @@
                                         <div class="col-lg-8">
                                             <select name="material[]" id="material[]" data-placeholder="เลือกวัสดุ" multiple class="form-control chzn-select  chzn-rtl" style="width: 350px; height:15px;">
                                             <?php  
+                                            print_r($data_material);exit;
                                             foreach ($data_material as $row2){
                                             ?>
                                                 <option value="<?=$row2['material_name']?>" <?php if(strpos($row['material'], $row2['material_name']) !== false){ echo "selected"; } ?> ><?=$row2['material_name']?></option>
