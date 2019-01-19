@@ -295,7 +295,8 @@ tbody tr:hover{
                                                                     <?php 
                                                                     }
                                                                 }else{
-                                                                    print $_SERVER["DOCUMENT_ROOT"]."/ruenrudee/uploads/artifact/gallery/".$data_id;
+                                                                    // print $_SERVER["DOCUMENT_ROOT"]."/ruenrudee/uploads/artifact/gallery/".$data_id;
+                                                                    echo "No data.";
                                                                 }
                                                                 ?>
                                                             </ul>
