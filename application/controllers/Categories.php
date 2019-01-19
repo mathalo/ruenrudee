@@ -45,7 +45,7 @@ class Categories extends MY_Controller {
 	{
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('cat_name', 'รูปแบบศิลปะ', 'required');
+		$this->form_validation->set_rules('cat_name', 'แบบศิลปะ', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
 		{	
@@ -90,7 +90,7 @@ class Categories extends MY_Controller {
 
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('cat_name', 'รูปแบบศิลปะ', 'required');
+		$this->form_validation->set_rules('cat_name', 'แบบศิลปะ', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
 		{

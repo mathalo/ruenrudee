@@ -58,9 +58,9 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label>รูปแบบศิลปะ</label>
+                                            <label>แบบศิลปะ</label>
                                             <select name="cat_id" id="cat_id" class="validate[required] form-control">
-                                                <option value="0">เลือกรูปแบบศิลปะ</option>
+                                                <option value="0">เลือกแบบศิลปะ</option>
                                             <?php 
                                             foreach ($data_category  as $row2){
                                             ?>
@@ -172,7 +172,7 @@
                                                 <th>ชื่อวัตถุ</th>
                                                 <th>หมวดหมู่วัตถุ</th>
                                                 <th>วัสดุ</th>
-                                                <th>รูปแบบศิลปะ</th>
+                                                <th>แบบศิลปะ</th>
                                                 <th>อาคาร</th>
                                                 <th>ห้อง</th>
                                                 <!-- <th>อายุสมัย</th> -->

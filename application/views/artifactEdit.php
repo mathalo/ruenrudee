@@ -161,7 +161,7 @@
                                         <label class="control-label col-lg-4">แบบศิลปะ</label>
                                         <div class="col-lg-4">
                                             <select name="cat_id" id="cat_id" class="validate[required] form-control">
-                                                <option value="0">เลือกรูปแบบศิลปะ</option>
+                                                <option value="0">เลือกแบบศิลปะ</option>
                                             <?php 
                                             foreach ($data_category  as $row2){
                                             ?>

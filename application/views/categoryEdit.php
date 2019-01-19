@@ -5,7 +5,7 @@
              <div class="inner">
                  <div class="row">
                  <div class="col-lg-12">
-                <h1 > แก้ไขรูปแบบศิลปะ </h1>
+                <h1 > แก้ไขแบบศิลปะ </h1>
                 </div>
                 </div>
                 <hr />
@@ -14,7 +14,7 @@
                          <div class="box">
                              <header>
                                  <div class="icons"><i class="icon-th-large"></i></div>
-                                 <h5>แก้ไขรูปแบบศิลปะ</h5>
+                                 <h5>แก้ไขแบบศิลปะ</h5>
                                  <div class="toolbar">
                                      <ul class="nav">
                                          <li>
@@ -38,17 +38,17 @@
                                         foreach ($data as $row){
                                     ?>
                                     <div class="form-group">
-                                         <label class="control-label col-lg-4">ชื่อรูปแบบศิลปะ</label>
+                                         <label class="control-label col-lg-4">ชื่อแบบศิลปะ</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="cat_name" name="cat_name" value="<?=$row['cat_name']?>" class="form-control" />
                                              <?php echo validation_errors('<div class="error"><label style="color: red;">', '</label></div>'); ?>
                                          </div>
                                      </div>
                                      <div class="form-group">
-                                            <label class="control-label col-lg-4">เลือกรูปแบบศิลปะหลัก</label>
+                                            <label class="control-label col-lg-4">เลือกแบบศิลปะหลัก</label>
                                             <div class="col-lg-4">
                                                 <select name="parent_id" id="parent_id" class="validate[required] form-control">
-                                                    <option value="0">เลือกรูปแบบศิลปะหลัก</option>
+                                                    <option value="0">เลือกแบบศิลปะหลัก</option>
                                                 <?php 
                                                 foreach ($data_scate as $row2){
                                                 ?>

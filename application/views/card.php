@@ -147,7 +147,7 @@ th, td {
                                                         <td align="right"  ><label class="control-label">ประวัติ :&nbsp;</label><?php echo $row['history']; ?></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">รูปแบบศิลปะ :&nbsp;</label>
+                                                        <td align="right"  ><label class="control-label">แบบศิลปะ :&nbsp;</label>
                                                             <?php 
                                                             foreach ($data_category  as $row2){
                                                                 if($row2['cat_id']==$row['cat_id']){ 

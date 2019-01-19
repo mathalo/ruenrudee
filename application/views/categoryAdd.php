@@ -5,7 +5,7 @@
              <div class="inner">  
                  <div class="row">
                  <div class="col-lg-12">
-                <h1 > เพิ่มรูปแบบศิลปะ </h1> 
+                <h1 > เพิ่มแบบศิลปะ </h1> 
                 </div> 
                 </div>
                 <hr />
@@ -14,7 +14,7 @@
                          <div class="box">
                              <header> 
                                  <div class="icons"><i class="icon-th-large"></i></div>
-                                 <h5>เพิ่มรูปแบบศิลปะ</h5>
+                                 <h5>เพิ่มแบบศิลปะ</h5>
                                  <div class="toolbar">
                                      <ul class="nav">
                                          <li>
@@ -37,10 +37,10 @@
                                  <!-- <form action="#" method="post" class="form-horizontal" id="block-validate"> -->
                                     
                                      <div class="form-group">
-                                            <label class="control-label col-lg-4">รูปแบบศิลปะหลัก</label>
+                                            <label class="control-label col-lg-4">แบบศิลปะหลัก</label>
                                             <div class="col-lg-4">
                                                 <select name="parent_id" id="parent_id" class="validate[required] form-control">
-                                                    <option value="0">เลือกรูปแบบศิลปะหลัก</option>
+                                                    <option value="0">เลือกแบบศิลปะหลัก</option>
                                                 <?php 
                                                 foreach ($data as $row){
                                                 ?>
@@ -50,7 +50,7 @@
                                             </div>
                                         </div>
                                     <div class="form-group">
-                                         <label class="control-label col-lg-4">ชื่อรูปแบบศิลปะ</label>
+                                         <label class="control-label col-lg-4">ชื่อแบบศิลปะ</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="cat_name" name="cat_name" value="<?php echo set_value('cat_name'); ?>"class="form-control" />
                                              <?php echo validation_errors('<div class="error"><label style="color: red;">', '</label></div>'); ?>

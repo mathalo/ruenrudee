@@ -5,7 +5,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2> รูปแบบศิลปะ</h2>
+                        <h2> แบบศิลปะ</h2>
  
                     </div>
                 </div>
@@ -14,7 +14,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                        รูปแบบศิลปะ
+                        แบบศิลปะ
                         </div>
                         
                         <div class="panel-body">
@@ -25,7 +25,7 @@
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>รูปแบบศิลปะ</th>
+                                            <th>แบบศิลปะ</th>
                                             <th>#</th>
                                         </tr>
                                     </thead>
