@@ -115,6 +115,6 @@ class Location extends My_controller {
 
 		$this->db->where('location_id', $id);
 		$this->db->update('location', $data); 
-		redirect('Location');
+		redirect('location');
 	}
 }
