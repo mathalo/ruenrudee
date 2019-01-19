@@ -61,9 +61,10 @@ class Artifact extends My_controller {
 
 	public function index()
 	{
-		// $query = $this->db->get_where('artifact', array('status' => 'open'));
+		// $query = $this->db->get_where('artifact', array('status' => 'deleted'));
 		$this->db->order_by("artifact_no", "asc");
-		$query = $this->db->get('artifact');
+		$query = $this->db->get_where('artifact', array('status !=' => 'deleted'));
+		// $query = $this->db->get('artifact');
 		$data['data'] = $query->result_array();
 
 		$this->load->view('template/head.php');
@@ -447,7 +448,7 @@ class Artifact extends My_controller {
 		$this->check_getvalue($id, 'artifact');
 		
 		$data = array(
-			'status' => 'closed',
+			'status' => 'deleted',
 		);
 		
 		$this->db->where('artifact_id', $id);
