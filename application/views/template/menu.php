@@ -32,7 +32,7 @@
                 </li>
                 <li class="panel">
                     <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#chart-nav">
-                        <i class="icon-tasks"></i> รูปแบบศิลปะ
+                        <i class="icon-tasks"></i> แบบศิลปะ
 	   
                         <span class="pull-right">
                             <i class="icon-angle-left"></i>
