@@ -430,7 +430,7 @@ class Artifact extends My_controller {
 			// echo $data['data'][0]['location_id']; exit;
 			$query = $this->db->get_where('location', array('parent_id' => '9999'));
 		}else{
-			$query = $this->db->get_where('location', array('parent_id' => $data['data'][0]['location_id']));
+			$query = $this->db->get_where('location', array('parent_id' => $data['data'][0]['location_id'], 'status' => 'open'));
 		}
 		$data['sub_data_location'] = $query->result_array();
 		
