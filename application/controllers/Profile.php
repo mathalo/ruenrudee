@@ -102,7 +102,7 @@ class Profile extends My_controller {
 	public function do_upload()
 	{
 		$config['upload_path']          = './uploads/member';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['encrypt_name']			= true;
 
 		$this->load->library('upload', $config);
