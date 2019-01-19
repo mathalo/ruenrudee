@@ -459,7 +459,7 @@ class Artifact extends My_controller {
 	public function do_upload()
 	{
 		$config['upload_path']          = './uploads/artifact/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['encrypt_name']			= true;
 		// $config['max_size']             = 100;
 		// $config['max_width']            = 1024;
