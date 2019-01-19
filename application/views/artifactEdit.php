@@ -274,7 +274,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                         <label class="control-label col-lg-4">การซ่อมสงวนรักษา</label>
+                                         <label class="control-label col-lg-4">การตรวจสอบ/แก้ไข</label>
                                          <div class="col-lg-4">
                                              <input type="text" id="revised" name="revised" value="<?=$row['revised']?>"class="form-control" />
                                              <?php echo form_error('revised', '<div class="error"><label style="color: red;">', '</label></div>'); ?>

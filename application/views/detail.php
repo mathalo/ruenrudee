@@ -256,7 +256,7 @@ tbody tr:hover{
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['implement']; ?></label></td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="right"  ><label class="control-label">การซ่อมสงวนรักษา :&nbsp;</label></td>
+                                                        <td align="right"  ><label class="control-label">การตรวจสอบ/แก้ไข :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['revised']; ?></label></td>
                                                     </tr>
                                                     <tr>
