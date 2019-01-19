@@ -41,6 +41,8 @@ class Search extends My_controller {
 			if(isset($posts['keyword']) and $posts['keyword'] != ''){
 				if(isset($posts['in_field'])){
 					$where .= " and artifact.".$posts['in_field']." like '%".$posts['keyword']."%' ";
+				}else{
+					$where .= " and artifact.artifact_name like '%".$posts['keyword']."%' ";
 				}
 			}
 
