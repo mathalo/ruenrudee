@@ -83,7 +83,8 @@ class Members extends My_controller {
 		$this->form_validation->set_rules('name', 'ชื่อสมาชิก', 'required');
 		$this->form_validation->set_rules('username', 'Username', 'required|callback_validate_username');
 		$this->form_validation->set_rules('password', 'Password', 'required');
-		$this->form_validation->set_rules('confirm_password', 'ยืนยันรหัสผ่าน', 'required|matches[รหัสผ่าน]');
+		$this->form_validation->set_rules('confirm_password', 'ยืนยันรหัสผ่าน', 'required|matches[password]');
+		// $this->form_validation->set_rules('confirm_password', 'ยืนยันรหัสผ่าน', 'required|matches[password]');
 		$this->form_validation->set_rules('email', 'อีเมล์', 'required|valid_email');
 		
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
