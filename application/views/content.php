@@ -42,7 +42,7 @@
                                             <?php 
                                             foreach ($data_artifact_type as $row2){
                                             ?>
-                                                <option value="<?=$row2['artifact_type_name']?>"><?=$row2['artifact_type_name']?></option>
+                                                <option value="<?=$row2['artifact_type_name']?>" <?php if(set_value('artifact_type_name')==$row2['artifact_type_name']){ echo "selected";} ?>><?=$row2['artifact_type_name']?></option>
                                             <?php }?>
                                             </select>
                                         </div>
