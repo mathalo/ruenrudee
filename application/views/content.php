@@ -206,7 +206,8 @@
                                                     }
                                                 }
                                                 ?>
-                                                <td><?php echo $row_sub_location['location_id']."///".$room."///".$row['sub_location_id'] ;?></td>
+                                                <td><?php //echo $row_sub_location['location_id']."///".$room."///".$row['sub_location_id'] ; 
+                                                echo $room ;?></td>
                                                 <!-- <td><?=$row['history']?></td> -->
                                                 <td><?=$row['quantity']?></td>
                                                 <td  id="non-printable">
