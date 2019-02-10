@@ -60,7 +60,11 @@
                         <i class="icon-tasks"></i> หมวดหมู่วัตถุ
                     </a>                   
                 </li> -->
-                
+                <li class="panel">
+                    <a href="<?php echo base_url(); ?>Event" >
+                        <i class="icon-tasks"></i> เหตุการณ์
+                    </a>                   
+                </li>
                 <li class="panel">
                     <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#location-nav">
                         <i class="icon-tasks"></i> อาคาร
