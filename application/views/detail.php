@@ -148,6 +148,8 @@ tbody tr:hover{
                                                                         
                                                                         img.setAttribute('src', '<?php echo base_url(); ?>uploads/artifact/'+old_filename);
                                                                         img.setAttribute('height', '200');
+                                                                        img.setAttribute('width', '200');
+                                                                        
                                                                         if(old_filename==''){ 
                                                                             img.setAttribute('src', '<?php echo base_url(); ?>uploads/artifact/default.png'); 
                                                                         }
