@@ -147,9 +147,6 @@ tbody tr:hover{
                                                                         var old_filename = document.getElementById('old_filename').value;
                                                                         
                                                                         img.setAttribute('src', '<?php echo base_url(); ?>uploads/artifact/'+old_filename);
-                                                                        img.setAttribute('height', '200');
-                                                                        img.setAttribute('width', '200');
-                                                                        
                                                                         if(old_filename==''){ 
                                                                             img.setAttribute('src', '<?php echo base_url(); ?>uploads/artifact/default.png'); 
                                                                         }
@@ -294,8 +291,9 @@ tbody tr:hover{
                                                                 if($allfiles!=0){
                                                                     for($i=0;$i<count($allfiles);$i++){
                                                                     ?>
-                                                                    <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
+                                                                    <li><a ><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
                                                                     <?php 
+                                                                    if(($i%4) == 0){echo '<br>';}
                                                                     }
                                                                 }else{
                                                                     // print $_SERVER["DOCUMENT_ROOT"]."/ruenrudee/uploads/artifact/gallery/".$data_id;
