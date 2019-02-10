@@ -292,7 +292,7 @@ tbody tr:hover{
                                                                 if($allfiles!=0){
                                                                     for($i=0;$i<count($allfiles);$i++){
                                                                     ?>
-                                                                    <img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/>
+                                                                    <img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>" weight="200" height="200"/>
                                                                     <?php 
                                                                     if((($i+1)%4) == 0){echo '<br>';}
                                                                     }
