@@ -72,6 +72,7 @@ tbody tr:hover{
 }
 
 </style>
+<link rel="stylesheet" href="<?php echo $_SERVER["DOCUMENT_ROOT"].'/assets/css/hes-gallery.css' ;?>">
         <!--PAGE CONTENT -->
         <div id="content">
         
@@ -283,7 +284,7 @@ tbody tr:hover{
                                                     <tr>
                                                         <td align="right" valign="top" ><label class="control-label"> แกลลอรี่ :&nbsp;</label></td>
                                                         <td><br>
-                                                            <ul id="gallery" class="pure-js-lightbox-container">
+                                                            <div class="hes-gallery">
                                                                 <?php
                                                                 
                                                                 $allfiles = dirlist($_SERVER["DOCUMENT_ROOT"]."/uploads/artifact/gallery/".$data_id, "files");
@@ -291,7 +292,7 @@ tbody tr:hover{
                                                                 if($allfiles!=0){
                                                                     for($i=0;$i<count($allfiles);$i++){
                                                                     ?>
-                                                                    <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>" ><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
+                                                                    <img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/>
                                                                     <?php 
                                                                     if((($i+1)%4) == 0){echo '<br>';}
                                                                     }
@@ -300,7 +301,7 @@ tbody tr:hover{
                                                                     echo "No data.";
                                                                 }
                                                                 ?>
-                                                            </ul>
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                     <!-- <tr>
@@ -327,6 +328,20 @@ tbody tr:hover{
                  </div>
                 </div> 
             </div>
+            <script src="<?php echo $_SERVER["DOCUMENT_ROOT"].'/assets/js/hes-gallery.js' ;?>"></script>
+            <script>
+
+                HesGallery.setOptions({
+                    disableScrolling: false,
+                    hostedStyles: false,
+                    animations: true,
+                    minResolution: 1000,
+
+                    showImageCount: true,
+                    wrapAround: true
+                });
+
+            </script>
        <!--END PAGE CONTENT -->
 
 
