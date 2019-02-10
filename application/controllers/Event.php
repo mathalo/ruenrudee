@@ -28,7 +28,7 @@ class Event extends My_controller {
 	{
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('event_name', 'ชื่อวัสดุ', 'required');
+		$this->form_validation->set_rules('event_name', 'ชื่อเหตุการณ์', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
 		{	
@@ -40,7 +40,8 @@ class Event extends My_controller {
 
 				if($posts['event_name'] != ''){
 					$data = array(
-						'event_name' => $posts['event_name'],
+                        'event_name' => $posts['event_name'],
+                        'event_name' => 'open',
 					);
 					$this->db->insert('event', $data); 
 					redirect('event');
@@ -66,7 +67,7 @@ class Event extends My_controller {
 	{
 		$this->check_getvalue($id, 'event');
 
-		$this->form_validation->set_rules('event_name', 'ชื่อวัสดุ', 'required');
+		$this->form_validation->set_rules('event_name', 'ชื่อเหตุการณ์', 'required');
 
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
 		{
