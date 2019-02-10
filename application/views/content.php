@@ -189,7 +189,7 @@
                                             ?>
                                             <tr <?php if($i%2==1){ echo 'class="success"'; }?>>
                                                 <td><?=$i?></td>
-                                                <td><img src="<?php echo base_url(); ?>uploads/artifact/<?php echo $row['image']; ?>" height="150" width="150"/></td>
+                                                <td><img src="<?php echo base_url(); ?>uploads/artifact/<?php echo $row['image']; ?>" height="75" width="75"/></td>
                                                 <td><?=$row['artifact_code']?></td>
                                                 <td><?=$row['artifact_name']?></td>
                                                 <td><?=$row['artifact_type']?></td>
@@ -211,6 +211,9 @@
                                                 <!-- <td><?=$row['history']?></td> -->
                                                 <td><?=$row['quantity']?></td>
                                                 <td  id="non-printable">
+                                                    <a onclick="window.location='<?php echo base_url(); ?>Artifact/edit/<?=$row['artifact_id']?>'">
+                                                        <button class="btn btn-primary"><i class="icon-pencil icon-white"></i> แก้ไข</button>
+                                                    </a> 
                                                     <a onclick="window.location='<?php echo base_url(); ?>search/detail/<?=$row['artifact_id']?>'">
                                                         <button class="btn btn-primary"><i class="icon-search icon-white"></i> ดูรายละเอียด</button>
                                                     </a> 
