@@ -41,7 +41,7 @@ class Event extends My_controller {
 				if($posts['event_name'] != ''){
 					$data = array(
                         'event_name' => $posts['event_name'],
-                        'event_name' => 'open',
+                        'status' => 'open',
 					);
 					$this->db->insert('event', $data); 
 					redirect('event');
