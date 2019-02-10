@@ -84,6 +84,12 @@ class Search extends My_controller {
 				$where .= " and artifact.sub_location_id = '".$posts['sub_location']."' ";
 			}
 
+			if(isset($posts['opt']) and $posts['opt'] != '0'){
+				if(isset($posts['weight']) and $posts['weight'] != '0'){
+					$where .= " and artifact.weight ".$posts['opt']." '".$posts['weight']."' ";
+				}
+			}
+
 			if(!isset($posts['status'])){
 				$where .= " and artifact.status='open' ";
 			}else{

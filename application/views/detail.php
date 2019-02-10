@@ -188,6 +188,10 @@ tbody tr:hover{
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['dimension_a']; ?></label></td>
                                                     </tr>
                                                     <tr>
+                                                        <td align="right"  ><label class="control-label">น้ำหนัก :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['weight']; ?></label></td>
+                                                    </tr>
+                                                    <tr>
                                                         <td align="right"  ><label class="control-label">แบบศิลปะ :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;
                                                             <?php 
@@ -250,7 +254,10 @@ tbody tr:hover{
                                                         <td align="right"  ><label class="control-label">ตู้/ชั้น :&nbsp;</label></td>
                                                         <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['other_location']; ?></label></td>
                                                     </tr>
-
+                                                    <tr>
+                                                        <td align="right"  ><label class="control-label">กล่องจัดเก็บ :&nbsp;</label></td>
+                                                        <td><label class="control-label">&nbsp;&nbsp;&nbsp;<?php echo $row['atf_box']; ?></label></td>
+                                                    </tr>
                                                     
                                                     <tr>
                                                         <td align="right"  ><label class="control-label">การนำไปใช้ :&nbsp;</label></td>

@@ -68,7 +68,27 @@
                                             <?php }?>
                                             </select>
                                         </div>
-                                        
+                                        <div class="form-group">
+                                            <label>น้ำหนัก</label>
+                                            <select name="opt" id="opt">
+                                                <option value="0">เลือกเงื่อนไข</option>
+                                                <option value=">">มากกว่า</option>
+                                                <option value=">=">มากกว่าหรือเท่ากับ</option>
+                                                <option value="<">น้อยกว่า</option>
+                                                <option value="<=">น้อยกว่าหรือเท่ากับ</option>
+                                            </select>
+
+                                            <select name="weight" id="weight">
+                                                <option value="0">ทั้งหมด</option>
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="20">20</option>
+                                                <option value="30">30</option>
+                                                <option value="40">40</option>
+                                                <option value="50">50</option>
+                                            </select>
+                                            กิโลกรัม
+                                        </div>
                                     </div>
                                     <!-- right -->
                                     <div class="col-lg-6">
