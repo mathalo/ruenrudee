@@ -162,6 +162,7 @@ class Artifact extends My_controller {
 								'quantity' => $posts['quantity'],
 								'period' => $posts['period'],
 								'dimension_a' => $posts['dimension_a'],
+								'weight' => $posts['weight'],								
 								// 'dimension_b' => $posts['dimension_b'],
 								'description' => $posts['description'],
 								'designer' => $posts['designer'],
@@ -170,6 +171,7 @@ class Artifact extends My_controller {
 								'location_id' => $posts['location_id'],
 								'sub_location_id' => $posts['sub_location'],
 								'other_location' => $posts['other_location'],
+								'atf_box' => $posts['atf_box'],
 
 								'note' => $posts['note'],
 								'tag_location' => $posts['tag_location'],
@@ -197,6 +199,7 @@ class Artifact extends My_controller {
 								'quantity' => $posts['quantity'],
 								'period' => $posts['period'],
 								'dimension_a' => $posts['dimension_a'],
+								'weight' => $posts['weight'],								
 								// 'dimension_b' => $posts['dimension_b'],
 								'description' => $posts['description'],
 								'designer' => $posts['designer'],
@@ -205,7 +208,8 @@ class Artifact extends My_controller {
 								'location_id' => $posts['location_id'],
 								'sub_location_id' => $posts['sub_location'],
 								'other_location' => $posts['other_location'],
-
+								'atf_box' => $posts['atf_box'],
+								
 								'note' => $posts['note'],
 								'tag_location' => $posts['tag_location'],
 								'revised' => $posts['revised'],
@@ -339,6 +343,8 @@ class Artifact extends My_controller {
 								'quantity' => $posts['quantity'],
 								'period' => $posts['period'],
 								'dimension_a' => $posts['dimension_a'],
+								'weight' => $posts['weight'],
+								
 								// 'dimension_b' => $posts['dimension_b'],
 								'description' => $posts['description'],
 								'designer' => $posts['designer'],
@@ -347,7 +353,8 @@ class Artifact extends My_controller {
 								'location_id' => $posts['location_id'],
 								'sub_location_id' => $posts['sub_location'],
 								'other_location' => $posts['other_location'],
-
+								'atf_box' => $posts['atf_box'],
+								
 								'note' => $posts['note'],
 								'tag_location' => $posts['tag_location'],
 								'revised' => $posts['revised'],
@@ -374,6 +381,8 @@ class Artifact extends My_controller {
 								'quantity' => $posts['quantity'],
 								'period' => $posts['period'],
 								'dimension_a' => $posts['dimension_a'],
+								'weight' => $posts['weight'],
+								
 								// 'dimension_b' => $posts['dimension_b'],
 								'description' => $posts['description'],
 								'designer' => $posts['designer'],
@@ -382,7 +391,8 @@ class Artifact extends My_controller {
 								'location_id' => $posts['location_id'],
 								'sub_location_id' => $posts['sub_location'],
 								'other_location' => $posts['other_location'],
-
+								'atf_box' => $posts['atf_box'],
+								
 								'note' => $posts['note'],
 								'tag_location' => $posts['tag_location'],
 								'revised' => $posts['revised'],

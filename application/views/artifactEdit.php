@@ -157,6 +157,13 @@
                                              <?php echo form_error('dimension_a', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
                                          </div>
                                      </div>
+                                     <div class="form-group">
+                                         <label class="control-label col-lg-4">น้ำหนัก (กิโลกรัม)</label>
+                                         <div class="col-lg-4">
+                                             <input type="text" id="weight" name="weight" value="<?=$row['weight']?>"class="form-control" />
+                                             <?php echo form_error('weight', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
+                                         </div>
+                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-lg-4">แบบศิลปะ</label>
                                         <div class="col-lg-4">
@@ -265,6 +272,13 @@
                                          <div class="col-lg-4">
                                              <input type="text" id="other_location" name="other_location" value="<?=$row['other_location']?>"class="form-control" />
                                              <?php echo form_error('other_location', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
+                                         </div>
+                                     </div>
+                                     <div class="form-group">
+                                         <label class="control-label col-lg-4">กล่องจัดเก็บ</label>
+                                         <div class="col-lg-4">
+                                             <input type="text" id="atf_box" name="atf_box" value="<?=$row['atf_box']?>"class="form-control" />
+                                             <?php echo form_error('atf_box', '<div class="error"><label style="color: red;">', '</label></div>'); ?>
                                          </div>
                                      </div>
                                      <div class="form-group">
