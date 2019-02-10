@@ -72,7 +72,7 @@ tbody tr:hover{
 }
 
 </style>
-<link rel="stylesheet" href="<?php echo $_SERVER["DOCUMENT_ROOT"].'/assets/css/hes-gallery.css' ;?>">
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/hes-gallery.css">
         <!--PAGE CONTENT -->
         <div id="content">
         
@@ -328,7 +328,7 @@ tbody tr:hover{
                  </div>
                 </div> 
             </div>
-            <script src="<?php echo $_SERVER["DOCUMENT_ROOT"].'/assets/js/hes-gallery.js' ;?>"></script>
+            <script src="<?php echo base_url(); ?>assets/js/hes-gallery.js"></script>
             <script>
 
                 HesGallery.setOptions({
