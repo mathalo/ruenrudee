@@ -84,8 +84,13 @@ class Search extends My_controller {
 				$where .= " and artifact.sub_location_id = '".$posts['sub_location']."' ";
 			}
 
+			if(!isset($posts['status'])){
+				$where .= " and artifact.status='open' ";
+			}else{
+				$where .= " and artifact.status='".$posts['status']."' ";
+			}
 
-			$select_query = "Select * from artifact inner join category on category.cat_id=artifact.cat_id  inner join location on location.location_id=artifact.location_id ".$where." and artifact.status='open' order by artifact.artifact_no asc" ;
+			$select_query = "Select * from artifact inner join category on category.cat_id=artifact.cat_id  inner join location on location.location_id=artifact.location_id ".$where." order by artifact.artifact_no asc" ;
 			$query = $this->db->query($select_query);
 			$data['where'] = $select_query;
 			
