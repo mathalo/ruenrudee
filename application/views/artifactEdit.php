@@ -341,7 +341,7 @@
                                      <div class="form-actions no-margin-bottom" style="text-align:center;">
                                         <input type="hidden" id="registra_approved" name="registra_approved" value="<?=$name?>"class="form-control" />
                                          <button  type="submit" id="example-10" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>Artifact/'">บันทึก</button>
-                                         <button  type="button" id="example-10" class="btn btn-primary ForMargin" onclick="window.location='<?php echo base_url(); ?>Artifact/'">ยกเลิก</button>
+                                         <button  type="button" id="example-10" class="btn btn-primary ForMargin" onclick="window.history.go(-1);">ยกเลิก</button>
                                      </div>
                                     <?php }?>
                                  <?php echo form_close(); ?>
