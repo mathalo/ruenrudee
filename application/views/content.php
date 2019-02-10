@@ -167,8 +167,8 @@
                                         <thead>
                                             <tr>
                                                 <th>No.</th>
+                                                <th>รูปภาพ</th>
                                                 <th>เลขวัตถุ</th>
-                                                <th>เลขเดิม</th>
                                                 <th>ชื่อวัตถุ</th>
                                                 <th>หมวดหมู่วัตถุ</th>
                                                 <th>วัสดุ</th>
@@ -189,8 +189,8 @@
                                             ?>
                                             <tr <?php if($i%2==1){ echo 'class="success"'; }?>>
                                                 <td><?=$i?></td>
+                                                <td><img src="<?php echo base_url(); ?>uploads/artifact/<?php echo $row['image']; ?>" height="150" width="150"/></td>
                                                 <td><?=$row['artifact_code']?></td>
-                                                <td><?=$row['old_number']?></td>
                                                 <td><?=$row['artifact_name']?></td>
                                                 <td><?=$row['artifact_type']?></td>
                                                 <td><?=$row['material']?></td>
