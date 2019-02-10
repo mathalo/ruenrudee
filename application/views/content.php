@@ -122,10 +122,13 @@
                                                 
                                             </select>
                                         </div>
-                                        <!-- <div class="form-group">
-                                            <label>ตู้/ชั้น</label>
-                                            <input name="other_location" id="other_location" class="form-control" placeholder="ตู้/ชั้น">
-                                        </div> -->
+                                        <div class="form-group">
+                                            <label>สถานะช้อมูล</label>
+                                            <select name="status" id="status">
+                                                <option value="open">Open</option>
+                                                <option value="closed">Closed</option>
+                                            </select>
+                                        </div>
                                         <div class="form-group" style="float:right;">
                                             <button type="submit" class="btn btn-default">ค้นหา</button>
                                             <button type="reset" class="btn btn-default">Reset</button>
