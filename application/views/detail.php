@@ -291,9 +291,9 @@ tbody tr:hover{
                                                                 if($allfiles!=0){
                                                                     for($i=0;$i<count($allfiles);$i++){
                                                                     ?>
-                                                                    <li><a ><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
+                                                                    <li><a href="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>" ><img src="../../uploads/artifact/gallery/<?=$data_id?>/<?=$allfiles[$i]?>"/></a></li>
                                                                     <?php 
-                                                                    if(($i%4) == 0){echo '<br>';}
+                                                                    if((($i+1)%4) == 0){echo '<br>';}
                                                                     }
                                                                 }else{
                                                                     // print $_SERVER["DOCUMENT_ROOT"]."/ruenrudee/uploads/artifact/gallery/".$data_id;
