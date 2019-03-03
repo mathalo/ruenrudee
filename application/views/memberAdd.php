@@ -104,7 +104,7 @@
                                      <div class="form-group"> 
                                          <label class="control-label col-lg-4">สิทธ์การใช้งาน</label>
                                          <div class="col-lg-4">
-                                            <select name="permission" id="locapermissiontion_id" class="form-control">  
+                                            <select name="permission" id="permission" class="form-control">  
                                                 <option value="1">Superadmin</option>
                                                 <option value="5">Admin</option>
                                                 <option value="10">Content</option>

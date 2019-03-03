@@ -93,6 +93,7 @@ class Members extends My_controller {
 			if($this->form_validation->run()==true){
 			
 				$status = $this->input->post('status');
+				$permission = $this->input->post('permission');
 				
 				if($status==NULL or $status==''){ $status="closed";}
 
@@ -160,6 +161,7 @@ class Members extends My_controller {
 			if($this->form_validation->run()==true){
 
 				$status = $this->input->post('status');
+				$permission = $this->input->post('permission');
 				
 				if($status==NULL or $status==''){ $status="closed";}
 
