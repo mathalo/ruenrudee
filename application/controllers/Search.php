@@ -7,6 +7,7 @@ class Search extends My_controller {
 	{
 			parent::__construct();
 			$this->check_login();
+			$this->check_permission();
 	}
 
 	public function test() 
