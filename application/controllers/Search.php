@@ -26,6 +26,9 @@ class Search extends My_controller {
 		
 		$query = $this->db->get_where('material', array('status' => 'open'));
 		$data['data_material'] = $query->result_array();
+
+		$query = $this->db->get_where('event', array('status' => 'open'));
+		$data['data_event'] = $query->result_array();
 		
 		$query = $this->db->get_where('location', array('parent_id' => 0, 'status' => 'open'));
         $data['data_location'] = $query->result_array();
@@ -70,6 +73,20 @@ class Search extends My_controller {
 						$where .= "artifact.material like  '%".$materialOption."%' or ";
 					}else{
 						$where .= "artifact.material like  '%".$materialOption."%' )";
+					}
+				}
+			}
+
+			$num_event = 0;
+			if(isset($posts['event'])){ 
+				$where .= " and (";
+				foreach ($posts['event'] as $eventOption){
+					$num_event++;
+					// $event .= $eventOption;
+					if($num_event != count($posts['event'])){
+						$where .= "artifact.event like  '%".$eventOption."%' or ";
+					}else{
+						$where .= "artifact.event like  '%".$eventOption."%' )";
 					}
 				}
 			}

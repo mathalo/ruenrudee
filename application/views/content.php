@@ -46,7 +46,16 @@
                                             <?php }?>
                                             </select>
                                         </div>
-                                        
+                                        <div class="form-group">
+                                            <label>เหตุการณ์</label>
+                                            <select name="event[]" id="event[]" data-placeholder="เลือกเหตุการณ์" multiple class="form-control chzn-select  chzn-rt" >
+                                            <?php 
+                                            foreach ($data_event as $row2){
+                                            ?>
+                                                <option value="<?=$row2['event_name']?>"><?=$row2['event_name']?></option>
+                                            <?php }?>
+                                            </select>
+                                        </div>
                                         <div class="form-group">
                                             <label>วัสดุ</label>
                                             <select name="material[]" id="material[]" data-placeholder="เลือกวัสดุ" multiple class="form-control chzn-select  chzn-rt" >
