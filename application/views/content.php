@@ -47,16 +47,6 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label>เหตุการณ์</label>
-                                            <select name="event[]" id="event[]" data-placeholder="เลือกเหตุการณ์" multiple class="form-control chzn-select  chzn-rt" >
-                                            <?php 
-                                            foreach ($data_event as $row2){
-                                            ?>
-                                                <option value="<?=$row2['event_name']?>"><?=$row2['event_name']?></option>
-                                            <?php }?>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
                                             <label>วัสดุ</label>
                                             <select name="material[]" id="material[]" data-placeholder="เลือกวัสดุ" multiple class="form-control chzn-select  chzn-rt" >
                                             <?php 
@@ -110,6 +100,16 @@
                                                 <option value="period" <?php if(set_value('in_field')=='period'){ echo 'selected="selected"'; }?>>อายุสมัย</option>
                                                 <option value="designer" <?php if(set_value('in_field')=='designer'){ echo 'selected="selected"'; }?>>ฝีมือช่าง/designer</option>
                                                 <option value="implement" <?php if(set_value('in_field')=='implement'){ echo 'selected="selected"'; }?>>การนำไปใช้งาน</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>เหตุการณ์</label>
+                                            <select name="event[]" id="event[]" data-placeholder="เลือกเหตุการณ์" multiple class="form-control chzn-select  chzn-rt" >
+                                            <?php 
+                                            foreach ($data_event as $row2){
+                                            ?>
+                                                <option value="<?=$row2['event_name']?>"><?=$row2['event_name']?></option>
+                                            <?php }?>
                                             </select>
                                         </div>
                                         <div class="form-group">
