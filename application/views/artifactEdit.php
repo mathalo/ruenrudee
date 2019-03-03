@@ -123,7 +123,32 @@
                                             </select>
                                         </div>
                                     </div>
-
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-4">เหตุการณ์</label>
+                                    
+                                        <div class="col-lg-8">
+                                            <select name="event[]" id="event[]" data-placeholder="เลือกเหตุการณ์" multiple class="form-control chzn-select  chzn-rtl" style="width: 350px; height:15px;">
+                                            <?php  
+                                            foreach ($data_event as $row2){
+                                            ?>
+                                                <option value="<?=$row2['event_name']?>" 
+                                                <?php 
+                                                $arrMat = explode(',', $row['event']);
+                                                $countMat = count($arrMat);
+                                                for($i=0;$i<$countMat;$i++){
+                                                    //if(strpos($row['event'], $row2['event_name']) !== false){ 
+                                                    if($arrMat[$i] == $row2['event_name']){ 
+                                                        echo "selected"; 
+                                                    } 
+                                                }
+                                                ?> 
+                                                >
+                                                <?=$row2['event_name']?>
+                                                </option>
+                                            <?php }?>
+                                            </select>
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <label class="control-label col-lg-4">วัสดุ</label>
                                     
