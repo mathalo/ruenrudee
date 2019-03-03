@@ -38,13 +38,13 @@ class MY_Controller extends CI_Controller {
 			if (!in_array($segment1, $arrSegment)){
 				redirect('search'); 
 			}
+		}else if($this->session->logged_in['permission']=='guess' ){
+			$arrSegment = array('search');
+			
+			if (!in_array($segment1, $arrSegment)){
+				redirect('search'); 
+			}
 		}
-		// exit;
-		// else if($this->session->logged_in['permission']=='guess' ){
-		// 	if($segment1 != 'search'){
-		// 		redirect('search'); 
-		// 	}
-		// }
 		return true;
 	}
 
