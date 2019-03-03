@@ -26,16 +26,17 @@ class MY_Controller extends CI_Controller {
 
 	public function check_permission(){
 		$segment = explode('/', $_SERVER['REQUEST_URI']); 
-		$segment1 = strtolower($segment[1]);
+		echo $segment1 = strtolower($segment[1]);
 
 		if($this->session->logged_in['permission']=='admin' ){
 			if($segment1 == 'members'){
 				redirect('search'); 
 			}
 		}else if($this->session->logged_in['permission']=='content' ){
-			if($segment1 != 'search' || $segment1 != 'artifact'){
-				redirect('search'); 
-			}
+			// if($segment1 != 'search' || $segment1 != 'artifact'){
+			// 	redirect('search'); 
+			// }
+			echo "content";
 		}
 		// else if($this->session->logged_in['permission']=='guess' ){
 		// 	if($segment1 != 'search'){
