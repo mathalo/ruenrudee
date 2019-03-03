@@ -25,6 +25,7 @@ class MY_Controller extends CI_Controller {
 	}
 
 	public function check_permission(){
+		echo $_SERVER['REQUEST_URI']; exit;
 		if($this->session->logged_in['permission']!='' ){
 			redirect('search'); 
 		}
