@@ -28,6 +28,7 @@
                                             <th>ชื่อ</th>
                                             <th>อีเมล์</th>
                                             <th>เบอร์โทรศัพท์</th>
+                                            <th>สิทธ์การใช้งาน</th>
                                             <th>#</th>
                                         </tr>
                                     </thead>
@@ -43,6 +44,17 @@
                                             <td><?=$row['name']?></td>
                                             <td><?=$row['email']?></td>
                                             <td><?=$row['telephone']?></td>
+                                            <td>
+                                                <?php
+                                                    $arr_p = array(
+                                                        '1' => 'Superadmin',
+                                                        '5' => 'Admin',
+                                                        '10' => 'Content',
+                                                        '11' => 'Guess',
+                                                    );
+                                                ?>
+                                                <?=$arr_p[$row['permission']]?>    
+                                            </td>
                                             <td>
                                                 <!-- <div class="make-switch switch-small">
                                                     <input type="checkbox" checked="checked" name="status" value="open" />
