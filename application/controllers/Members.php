@@ -51,7 +51,7 @@ class Members extends My_controller {
 
 	public function index()
 	{
-		$query = $this->db->get('member');
+		$query = $this->db->get_where('member', array('member_id !=' => 1));
 		$data['data'] = $query->result_array();
 
 		$this->load->view('template/head.php');
@@ -94,7 +94,7 @@ class Members extends My_controller {
 			
 				$status = $this->input->post('status');
 				$permission = $this->input->post('permission');
-				
+
 				if($status==NULL or $status==''){ $status="closed";}
 
 				$posts = $this->input->post();
