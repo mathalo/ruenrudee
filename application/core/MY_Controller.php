@@ -32,17 +32,16 @@ class MY_Controller extends CI_Controller {
 			if($segment1 == 'members'){
 				redirect('search'); 
 			}
-		}else if($this->session->logged_in['permission']=='content' ){
-			if($segment1 != 'search' || $segment1 != 'artifact'){
-				redirect('search'); 
-			}
-		}else if($this->session->logged_in['permission']=='guess' ){
-			if($segment1 != 'search'){
-				redirect('search'); 
-			}
-		}else if ($this->session->logged_in['permission']!='' ){
-			redirect('search'); 
 		}
+		// else if($this->session->logged_in['permission']=='content' ){
+		// 	if($segment1 != 'search' || $segment1 != 'artifact'){
+		// 		redirect('search'); 
+		// 	}
+		// }else if($this->session->logged_in['permission']=='guess' ){
+		// 	if($segment1 != 'search'){
+		// 		redirect('search'); 
+		// 	}
+		// }
 		return true;
 	}
 
