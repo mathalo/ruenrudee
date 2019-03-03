@@ -6,7 +6,7 @@ class ArtifactType extends My_controller {
 	public function __construct() {
         parent::__construct();
         $this->check_login();
-        
+        $this->check_permission();
     }
 
 	public function type($id)

@@ -7,6 +7,7 @@ class Categories extends MY_Controller {
 	{
 			parent::__construct();
 			$this->check_login();
+			$this->check_permission();
 	}
 	
 	public function type($id)

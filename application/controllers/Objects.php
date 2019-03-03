@@ -24,6 +24,7 @@ class Objects extends My_controller {
 		parent::__construct();
  
 		$this->check_login();
+		$this->check_permission();
 		$this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
 		$this->load->helper("file");
