@@ -45,7 +45,7 @@ class Login extends My_controller {
                 echo '<h2>You are spammer ! Get the @$%K out</h2>';
             } else {
                 echo '<h2>Logined.</h2>';
-                redirect('Artifact');
+                redirect('Search');
             }
 
             
