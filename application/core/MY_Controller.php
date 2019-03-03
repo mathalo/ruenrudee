@@ -38,6 +38,7 @@ class MY_Controller extends CI_Controller {
 			// }
 			echo "content";
 		}
+		exit;
 		// else if($this->session->logged_in['permission']=='guess' ){
 		// 	if($segment1 != 'search'){
 		// 		redirect('search'); 
