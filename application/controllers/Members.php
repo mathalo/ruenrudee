@@ -109,7 +109,8 @@ class Members extends My_controller {
                             'name' => $posts['name'],
                             'address' => $posts['address'],
                             'telephone' => $posts['telephone'],
-                            'email' => $posts['email'],
+							'email' => $posts['email'],
+							'permission' => $permission,
                             'status' => $status
                         );
 
@@ -120,7 +121,8 @@ class Members extends My_controller {
                             'name' => $posts['name'],
                             'address' => $posts['address'],
                             'telephone' => $posts['telephone'],
-                            'email' => $posts['email'],
+							'email' => $posts['email'],
+							'permission' => $permission,
                             'status' => $status
                         );
                     }
@@ -174,7 +176,8 @@ class Members extends My_controller {
                             'name' => $posts['name'],
                             'address' => $posts['address'],
                             'telephone' => $posts['telephone'],
-                            'email' => $posts['email'],
+							'email' => $posts['email'],
+							'permission' => $permission,
                             'status' => $status
                         );
 
@@ -184,7 +187,8 @@ class Members extends My_controller {
                             'name' => $posts['name'],
                             'address' => $posts['address'],
                             'telephone' => $posts['telephone'],
-                            'email' => $posts['email'],
+							'email' => $posts['email'],
+							'permission' => $permission,
                             'status' => $status
                         );
                     }
@@ -224,7 +228,7 @@ class Members extends My_controller {
 	}
 
 	public function do_upload()
-	{
+	{ 
 		$config['upload_path']          = './uploads/member/';
 		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['encrypt_name']			= true;
