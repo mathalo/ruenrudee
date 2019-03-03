@@ -122,7 +122,7 @@
                                             <?php }?>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div> 
                                     <div class="form-group">
                                         <label class="control-label col-lg-4">เหตุการณ์</label>
                                     

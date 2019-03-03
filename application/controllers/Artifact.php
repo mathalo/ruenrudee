@@ -113,12 +113,27 @@ class Artifact extends My_controller {
 							}
 						}
 					}
+
+					$num_event = 0;
+					$event='';
+					if(!isset($posts['event'])){ 
+						$event = ''; 
+						$posts['event'] = '';
+					}else{
+						foreach ($posts['event'] as $eventOption){
+							$num_event++;
+							$event .= $eventOption;
+							if($num_mat != count($posts['event'])){
+								$event .= ",";
+							}
+						}
+					}
 					//echo $material."<br>";
 
 					$num_art = 0;
 					$art_type='';
 					if(!isset($posts['artifact_type'])){ 
-						$material = ''; 
+						$art_type = ''; 
 						$posts['artifact_type'] = '';
 					}else{
 						foreach ($posts['artifact_type'] as $artOption){
@@ -158,6 +173,7 @@ class Artifact extends My_controller {
 								'artifact_name' => $posts['artifact_name'],
 								'artifact_type' => $art_type,
 								'material' => $material,
+								'event' => $event,
 								'cat_id' => $posts['cat_id'],
 								'quantity' => $posts['quantity'],
 								'period' => $posts['period'],
@@ -195,6 +211,7 @@ class Artifact extends My_controller {
 								'artifact_name' => $posts['artifact_name'],
 								'artifact_type' => $art_type,
 								'material' => $material,
+								'event' => $event,
 								'cat_id' => $posts['cat_id'],
 								'quantity' => $posts['quantity'],
 								'period' => $posts['period'],
@@ -246,7 +263,7 @@ class Artifact extends My_controller {
 		
 		$query = $this->db->get_where('event', array('status' => 'open'));
 		$data['data_event'] = $query->result_array();
-		
+
 		$query = $this->db->get_where('location', array('parent_id' => 0, 'status' => 'open'));
         $data['data_location'] = $query->result_array();
 
@@ -297,6 +314,21 @@ class Artifact extends My_controller {
 							}
 						}
 					}
+
+					$num_event = 0;
+					$event='';
+					if(!isset($posts['event'])){ 
+						$event = ''; 
+						$posts['event'] = '';
+					}else{
+						foreach ($posts['event'] as $eventOption){
+							$num_event++;
+							$event .= $eventOption;
+							if($num_mat != count($posts['event'])){
+								$event .= ",";
+							}
+						}
+					}
 					// echo $material."<br>";
 
 					$num_art = 0;
@@ -342,6 +374,7 @@ class Artifact extends My_controller {
 								'artifact_name' => $posts['artifact_name'],
 								'artifact_type' => $art_type,
 								'material' => $material,
+								'event' => $event,
 								'cat_id' => $posts['cat_id'],
 								'quantity' => $posts['quantity'],
 								'period' => $posts['period'],
@@ -380,6 +413,7 @@ class Artifact extends My_controller {
 								'artifact_name' => $posts['artifact_name'],
 								'artifact_type' => $art_type,
 								'material' => $material,
+								'event' => $event,
 								'cat_id' => $posts['cat_id'],
 								'quantity' => $posts['quantity'],
 								'period' => $posts['period'],
