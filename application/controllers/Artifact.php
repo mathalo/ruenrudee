@@ -508,6 +508,7 @@ class Artifact extends My_controller {
 		$query = $this->db->get_where('location', array('parent_id' => 0, 'status' => 'open'));
         $data['data_location'] = $query->result_array();
 		
+		$this->db->order_by("id", "desc");
 		$query = $this->db->get_where('artifactlog', array('artifact_id' => $id));
 		$data['artifactlog'] = $query->result_array();
 		
