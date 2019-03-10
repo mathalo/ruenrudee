@@ -459,8 +459,8 @@ class Artifact extends My_controller {
 						foreach($arrayLog as $key => $value)
 						{
 							echo "old data {$key} = > ".$olddata[$key]."<br>";
-							echo "new data {$key}= > ".$value[$key]."<br>";
-							echo $mykey = $key;
+							echo "new data {$key}= > ".$data[$key]."<br>";
+							//echo $mykey = $key;
 						}
 						// print_r($arrayLog);
 
