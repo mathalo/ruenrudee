@@ -458,14 +458,25 @@ class Artifact extends My_controller {
 
 						foreach($arrayLog as $key => $value)
 						{
-							echo "old data {$key} = > ".$olddata[$key]."<br>";
-							echo "new data {$key}= > ".$data[$key]."<br>";
+							if($key != 'date_updated'){
+								// echo "old data {$key} = > ".$olddata[$key]."<br>";
+								// echo "new data {$key}= > ".$data[$key]."<br>";
+								$datalog = array(
+									'field_name' => $key,
+									'old_data' => $olddata[$key],
+									'new_data' => $data[$key],
+									'artifact_id' => $id,
+									'member' => $posts['entry_by'],
+									'date_time' => $datecreate,
+								);
+								$this->db->insert('artifactlog', $datalog); 
+							}
 							//echo $mykey = $key;
 						}
 						// print_r($arrayLog);
 
-						// $this->db->insert('artifactlog', $datalog); 
-						exit;
+						
+						// exit;
 						$this->db->where('artifact_id', $id);
 						$this->db->update('artifact', $data);
 
