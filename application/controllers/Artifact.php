@@ -454,8 +454,17 @@ class Artifact extends My_controller {
 						foreach ($olddata as $key => $value){
 							//print_r($value);
 						}
-						$array = array_diff( $data, $value);
-						print_r($array);
+						$arrayLog = array_diff( $data, $value);
+
+						foreach($arrayLog as $key => $value)
+						{
+							echo "old data = > ".$olddata[$key]."<br>";
+							echo "new data = > ".$value[$key]."<br>";
+						 	// $mykey = $key;
+						}
+						// print_r($arrayLog);
+
+						$this->db->insert('artifactlog', $datalog); 
 						exit;
 						$this->db->where('artifact_id', $id);
 						$this->db->update('artifact', $data);
