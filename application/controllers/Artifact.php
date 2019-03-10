@@ -466,7 +466,7 @@ class Artifact extends My_controller {
 									'old_data' => $olddata[$key],
 									'new_data' => $data[$key],
 									'artifact_id' => $id,
-									'member' => $posts['entry_by'],
+									'member' => $this->session->logged_in['name'],
 									'date_time' => $datecreate,
 								);
 								$this->db->insert('artifactlog', $datalog); 
