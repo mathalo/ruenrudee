@@ -449,12 +449,12 @@ class Artifact extends My_controller {
 						}
 
 						$oldquery = $this->db->get_where('artifact', array('artifact_id' => $id));
-						$olddata = $oldquery->result_array();
+						$olddatas = $oldquery->result_array();
 
-						foreach ($olddata as $key => $value){
+						foreach ($olddatas as $key => $olddata){
 							//print_r($value);
 						}
-						$arrayLog = array_diff( $data, $value);
+						$arrayLog = array_diff( $data, $olddata);
 
 						foreach($arrayLog as $key => $value)
 						{
