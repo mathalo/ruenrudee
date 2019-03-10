@@ -366,14 +366,6 @@ class Artifact extends My_controller {
 					// exit;
 					// if($status != 'open'){ $posts['registra_approved'] = $posts['registra_approved'].'_not approve'; }
 
-					// $query = $this->db->query("YOUR QUERY");
-					// $fields = $query->field_data();
-					$oldquery = $this->db->get_where('artifact', array('artifact_id' => $id));
-					$olddata = $oldquery->result_array();
-
-					print_r($olddata);
-					exit;
-
 					if($posts['artifact_name'] != ''){
 						if($posts['filename']!=''){
 							$data = array(
@@ -455,6 +447,14 @@ class Artifact extends My_controller {
 								'status' => $status
 							);
 						}
+
+						$oldquery = $this->db->get_where('artifact', array('artifact_id' => $id));
+						$olddata = $oldquery->result_array();
+
+						foreach ($olddata as $key => $value){
+							print_r($key);
+						}
+						exit;
 						$this->db->where('artifact_id', $id);
 						$this->db->update('artifact', $data);
 
