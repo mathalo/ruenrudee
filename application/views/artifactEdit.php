@@ -376,6 +376,64 @@
                  </div>
                 </div> 
             </div>
+
+           
+         <div id="content">
+
+            <div class="inner">
+                
+                <hr />
+                <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            การแก้ไขข้อมูล
+                        </div>
+                        
+                        <div class="panel-body">
+                            
+                            <div class="table-responsive">
+                                
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>field_name</th>
+                                            <th>ข้อมูลเก่า</th>
+                                            <th>ข้อมูลใหม่</th>
+                                            <th>username</th>
+                                            <th>วันที่แก้ไข</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <?php 
+                                        $i=0;
+                                        foreach ($artifactlog as $row){
+                                            $i++;
+                                        ?>
+                                        <tr <?php if($i%2==1){ echo 'class="success"'; }?>>
+                                            <td><?=$i?></td>
+                                            <td><?=$row['field_name']?></td>
+                                            <td><?=$row['old_data']?></td>
+                                            <td><?=$row['new_data']?></td>
+                                            <td><?=$row['member']?></td>
+                                            <td><?=$row['date_time']?></td>
+                                        </tr>
+                                        <?php
+                                        }?>
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
        <!--END PAGE CONTENT -->
 
 
