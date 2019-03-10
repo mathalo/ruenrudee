@@ -376,7 +376,7 @@ class Artifact extends My_controller {
 							// echo $field->artifact_no;
 							// echo $field->artifact_code;
 							// echo $field->old_number;
-							echo $field->artifact_name;
+							print_r($field);
 					}
 					exit;
 
