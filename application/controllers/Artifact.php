@@ -369,15 +369,9 @@ class Artifact extends My_controller {
 					// $query = $this->db->query("YOUR QUERY");
 					// $fields = $query->field_data();
 					$this->db->where('artifact_id', $id);
-					$fields = $this->db->field_data('artifact');
+					$fields = $this->db->query('artifact');
 
-					foreach ($fields as $field)
-					{
-							// echo $field->artifact_no;
-							// echo $field->artifact_code;
-							// echo $field->old_number;
-							print_r($field);
-					}
+					print_r($fields);
 					exit;
 
 					if($posts['artifact_name'] != ''){
