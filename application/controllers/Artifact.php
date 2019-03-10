@@ -365,6 +365,21 @@ class Artifact extends My_controller {
 					// echo $clean;
 					// exit;
 					// if($status != 'open'){ $posts['registra_approved'] = $posts['registra_approved'].'_not approve'; }
+
+					// $query = $this->db->query("YOUR QUERY");
+					// $fields = $query->field_data();
+					$this->db->where('artifact_id', $id);
+					$this->db->field_data('artifact');
+
+					foreach ($fields as $field)
+					{
+							// echo $field->artifact_no;
+							// echo $field->artifact_code;
+							// echo $field->old_number;
+							echo $field->artifact_name;
+					}
+					exit;
+
 					if($posts['artifact_name'] != ''){
 						if($posts['filename']!=''){
 							$data = array(
