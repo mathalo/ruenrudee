@@ -369,7 +369,7 @@ class Artifact extends My_controller {
 					// $query = $this->db->query("YOUR QUERY");
 					// $fields = $query->field_data();
 					$this->db->where('artifact_id', $id);
-					$this->db->field_data('artifact');
+					$fields = $this->db->field_data('artifact');
 
 					foreach ($fields as $field)
 					{
