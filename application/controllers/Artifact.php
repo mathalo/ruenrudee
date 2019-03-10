@@ -452,8 +452,10 @@ class Artifact extends My_controller {
 						$olddata = $oldquery->result_array();
 
 						foreach ($olddata as $key => $value){
-							print_r($value);
+							//print_r($value);
 						}
+						$array = array_diff( $data, $value);
+						print_r($array);
 						exit;
 						$this->db->where('artifact_id', $id);
 						$this->db->update('artifact', $data);
