@@ -50,7 +50,7 @@ table {
 }
 thead{
     /*background:dodgerblue;*/
-    background:#FF69B4;
+    background:#111;
 }
 thead th{
     height:25px;
