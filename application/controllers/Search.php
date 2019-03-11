@@ -243,6 +243,9 @@ class Search extends My_controller {
 		$query = $this->db->get('location');
         $data['data_location'] = $query->result_array();
 		
+		$this->db->order_by("id", "desc");
+		$query = $this->db->get_where('artifactlog', array('artifact_id' => $id));
+		$data['artifactlog'] = $query->result_array();
 		// if($data['data'][0]['location_id']==0){
 		// 	// echo $data['data'][0]['location_id']; exit;
 		// 	$query = $this->db->get_where('location', array('parent_id' => '9999'));
