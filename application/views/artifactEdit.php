@@ -385,14 +385,13 @@
                 <hr />
                 <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                             การแก้ไขข้อมูล
                         </div>
                         
-                        <div class="panel-body">
                             
-                            <div >
+                            <div class="table-responsive">
                                 
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
@@ -428,7 +427,6 @@
 
                             </div>
                            
-                        </div>
                     </div>
                 </div>
             </div>
