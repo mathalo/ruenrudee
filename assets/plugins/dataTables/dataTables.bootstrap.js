@@ -73,7 +73,7 @@ if ($.fn.dataTable.Api) {
                             break;
 
                         default:
-                            btnDisplay = button + 2;
+                            btnDisplay = button + 1;
                             btnClass = page === button ?
                                 'active' : '';
                             break;
