@@ -21,7 +21,7 @@
                             
                             <div class="table-responsive">
                                 
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <table class="table table-striped table-bordered table-hover" id="artifactTB">
                                     <thead>
                                         <tr>
                                             <th>No.</th>
@@ -83,6 +83,11 @@
                 window.location='<?php echo base_url(); ?>Artifact/delete/'+delId;
             }
         }
+        $(document).ready(function() {
+            $('#artifactTB').DataTable( {
+                stateSave: true
+            } );
+        } );
         </script>
        <!--END PAGE CONTENT -->
 
