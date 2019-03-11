@@ -21,7 +21,7 @@
                             
                             <div class="table-responsive">
                                 
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <table class="table table-striped table-bordered table-hover" id="artifactTB">
                                     <thead>
                                         <tr>
                                             <th>No.</th>
@@ -84,7 +84,7 @@
             }
         }
         $(document).ready(function() {
-            $('#dataTables-example').DataTable( {
+            $('#artifactTB').DataTable( {
                 stateSave: true
             } );
         } );
