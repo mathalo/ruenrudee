@@ -349,7 +349,7 @@ tbody tr:hover{
                 });
 
             </script>
-        <div id="content">
+         <div id="content">
 
             <div class="inner">
                 
@@ -365,14 +365,14 @@ tbody tr:hover{
                             
                             <div class="table-responsive">
                                 
-                                <table class="table table-striped table-bordered" >
+                                <table class="table table-striped table-bordered table-hover" >
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>ส่วน่ที่แก้</th>
+                                            <th>field_name</th>
                                             <th>ข้อมูลเก่า</th>
                                             <th>ข้อมูลใหม่</th>
-                                            <th>ชื่อ</th>
+                                            <th>username</th>
                                             <th>วันที่แก้ไข</th>
                                         </tr>
                                     </thead>
