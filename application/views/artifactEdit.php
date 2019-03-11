@@ -390,11 +390,11 @@
                             การแก้ไขข้อมูล
                         </div>
                         
-                        <div >
+                        <div class="panel-body">
                             
                             <div class="table-responsive">
                                 
-                                <table class="table table-bordered table-hover" id="dataTables-example">
+                                <table id="dataTables-example">
                                     <thead>
                                         <tr>
                                             <th>No.</th>
