@@ -50,11 +50,11 @@ table {
 }
 thead{
     /*background:dodgerblue;*/
-    background:#111;
+    background:#fff;
 }
 thead th{
     height:25px;
-    color:white;
+    color:black;
 }
 
 th, td {
