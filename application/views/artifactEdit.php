@@ -392,9 +392,9 @@
                         
                         <div class="panel-body">
                             
-                            <div class="table-responsive">
+                            <div >
                                 
-                                <table id="dataTables-example">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
                                             <th>No.</th>
