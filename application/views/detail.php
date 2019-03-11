@@ -369,10 +369,10 @@ tbody tr:hover{
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>field_name</th>
+                                            <th>ส่วนที่แก้</th>
                                             <th>ข้อมูลเก่า</th>
                                             <th>ข้อมูลใหม่</th>
-                                            <th>username</th>
+                                            <th>ชื่อผู้แก้ข้อมูล</th>
                                             <th>วันที่แก้ไข</th>
                                         </tr>
                                     </thead>

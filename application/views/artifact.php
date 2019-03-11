@@ -83,11 +83,6 @@
                 window.location='<?php echo base_url(); ?>Artifact/delete/'+delId;
             }
         }
-        $(document).ready(function() {
-            $('#dataTables-example').DataTable( {
-                stateSave: true
-            } );
-        } );
         </script>
        <!--END PAGE CONTENT -->
 
