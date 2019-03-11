@@ -385,7 +385,7 @@
                 <hr />
                 <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-default">
+                    <div class="panel">
                         <div class="panel-heading">
                             การแก้ไขข้อมูล
                         </div>
