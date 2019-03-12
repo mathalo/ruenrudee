@@ -128,8 +128,8 @@
         //     $('#dataTables-example').dataTable().state.clear();
         // });
         function clearState(){
-            alert('click menu.');
-            // $('#dataTables-example').dataTable().state.clear();
+            // alert('click menu.');
+            $('#dataTables-example').dataTable().state.clear();
         }
         </script>
         <!--END MENU SECTION -->
