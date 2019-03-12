@@ -45,7 +45,8 @@
     <script>
          $(document).ready(function () {
              $('#dataTables-example').dataTable({
-                stateSave: true
+                stateSave: true,
+                stateDuration: 60 * 60 * 24
              }); 
          });
         //  $(function () { formInit(); });
