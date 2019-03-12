@@ -121,7 +121,10 @@
 
         </div>
         <script>
-        $("#menu li").on("click", function(){
+        // $("#menu li").on("click", function(){
+            
+        // });
+        $('.panel').click(function() {
             $('#dataTables-example').dataTable().state.clear();
         });
         </script>
