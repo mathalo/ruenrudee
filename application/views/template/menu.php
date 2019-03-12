@@ -129,7 +129,8 @@
         // });
         function clearState(){
             // alert('click menu.');
-            $('#dataTables-example').dataTable().state.clear();
+            document.getElementById(dataTables-example).dataTable().state.clear();
+            // $('#dataTables-example').dataTable().state.clear();
         }
         </script>
         <!--END MENU SECTION -->
