@@ -2,7 +2,7 @@
     <div id="left">
             
 
-            <ul id="menu" class="collapse">
+            <ul id="menu" class="collapse" onclick="clearState();">
                 
                 <?php if($this->session->logged_in['permission']!=''){ ?>
                 
@@ -121,11 +121,15 @@
 
         </div>
         <script>
-        ('#menu').click(function() {
-            alert('click menu.');
-        });
+        // ('#menu').click(function() {
+        //     alert('click menu.');
+        // });
         // $('.panel').click(function() {
         //     $('#dataTables-example').dataTable().state.clear();
         // });
+        function clearState(){
+            alert('click menu.');
+            // $('#dataTables-example').dataTable().state.clear();
+        }
         </script>
         <!--END MENU SECTION -->
