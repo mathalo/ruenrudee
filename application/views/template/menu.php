@@ -121,7 +121,7 @@
 
         </div>
         <script>
-        $("#menu").on("click", function(){
+        ('#menu').click(function() {
             alert('click menu.');
         });
         // $('.panel').click(function() {
