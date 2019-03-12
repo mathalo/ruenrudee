@@ -121,11 +121,11 @@
 
         </div>
         <script>
-        // $("#menu li").on("click", function(){
-            
-        // });
-        $('.panel').click(function() {
-            $('#dataTables-example').dataTable().state.clear();
+        $("#menu").on("click", function(){
+            alert('click menu.');
         });
+        // $('.panel').click(function() {
+        //     $('#dataTables-example').dataTable().state.clear();
+        // });
         </script>
         <!--END MENU SECTION -->
