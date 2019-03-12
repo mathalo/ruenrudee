@@ -46,7 +46,7 @@
          $(document).ready(function () {
              $('#dataTables-example').dataTable({
                 stateSave: true
-             });
+             }); 
          });
         //  $(function () { formInit(); });
         //  $(function () { formValidation(); });
