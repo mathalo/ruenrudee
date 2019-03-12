@@ -120,10 +120,4 @@
             </ul>
 
         </div>
-        <script>
-        
-            table.state.clear();
-            window.location.reload();
-        
-        </script>
         <!--END MENU SECTION -->
