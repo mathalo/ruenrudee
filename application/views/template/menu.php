@@ -120,4 +120,9 @@
             </ul>
 
         </div>
+        <script>
+        $(".panel").on("click", function(){
+            $('#dataTables-example').DataTable().state.clear();
+        });
+        </script>
         <!--END MENU SECTION -->
