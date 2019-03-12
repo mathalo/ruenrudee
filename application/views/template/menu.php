@@ -121,16 +121,9 @@
 
         </div>
         <script>
-        // ('#menu').click(function() {
-        //     alert('click menu.');
-        // });
-        // $('.panel').click(function() {
-        //     $('#dataTables-example').dataTable().state.clear();
-        // });
         function clearState(){
-            // alert('click menu.');
-            document.getElementById(dataTables-example).dataTable().state.clear();
-            // $('#dataTables-example').dataTable().state.clear();
+            table.state.clear();
+            window.location.reload();
         }
         </script>
         <!--END MENU SECTION -->
