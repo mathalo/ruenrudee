@@ -121,8 +121,9 @@
 
         </div>
         <script>
+        
         function clearState(){
-            table.state.clear();
+            $('#dataTables-example').state.clear();
             window.location.reload();
         }
         </script>
