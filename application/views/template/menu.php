@@ -127,10 +127,10 @@
         // $('.panel').click(function() {
         //     $('#dataTables-example').dataTable().state.clear();
         // });
-        function clearState(){
-            var table = $('#dataTables-example').DataTable();
-            table.state.clear();  // 1a - Clear State
-            table.destroy();   // 1b - Destroy
-        }
+        // function clearState(){
+        //     var table = $('#dataTables-example').DataTable();
+        //     table.state.clear();  // 1a - Clear State
+        //     table.destroy();   // 1b - Destroy
+        // }
         </script>
         <!--END MENU SECTION -->

@@ -43,12 +43,12 @@
     
 
     <script>
-        //  $(document).ready(function () {
-        //      $('#dataTables-example').dataTable({
-        //         stateSave: true,
-        //         stateDuration: 60 * 60 * 24
-        //      }); 
-        //  });
+         $(document).ready(function () {
+             $('#dataTables-example').dataTable({
+                stateSave: true,
+                stateDuration: 60 * 60 * 24
+             }); 
+         });
         //  $(function () { formInit(); });
         //  $(function () { formValidation(); });
     </script>
