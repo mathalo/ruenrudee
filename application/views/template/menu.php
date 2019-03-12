@@ -122,7 +122,7 @@
         </div>
         <script>
         $(".panel").on("click", function(){
-            $('#dataTables-example').DataTable().state.clear();
+            $('#dataTables-example').dataTable().state.clear();
         });
         </script>
         <!--END MENU SECTION -->
